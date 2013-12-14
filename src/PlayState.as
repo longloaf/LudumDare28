@@ -1,6 +1,7 @@
 package  
 {
 	import org.flixel.FlxG;
+	import org.flixel.FlxSprite;
 	import org.flixel.FlxState;
 	import org.flixel.FlxText;
 	/**
@@ -14,9 +15,13 @@ package
 		
 		override public function create():void 
 		{
+			var bg:FlxSprite = new FlxSprite();
+			bg.makeGraphic(FlxG.width, FlxG.height);
+			
 			floor = new Floor();
 			player = new Player();
 			
+			add(bg);
 			add(floor);
 			add(player);
 		}
