@@ -11,9 +11,12 @@ package
 		[Embed(source = "data/player_100x160_3.png")]
 		private static const Img:Class;
 		
-		private var actionManager:ActionManager = new ActionManager();
+		public var actionManager:ActionManager = new ActionManager();
 		
-		private var bigJumpAction:Action = new Action();
+		private var stopAction:Action = new Action("STOP");
+		private var changeDirAction:Action = new Action("CHANGE DIR");
+		private var smallJumpAction:Action = new Action("SMALL JUMP");
+		private var bigJumpAction:Action = new Action("BIG JUMP");
 		
 		//private const SMALL_JUMP_STATE:int = 0;
 		//private const SMALL_SUMP_FINISH_STATE:int = 1;
@@ -23,7 +26,7 @@ package
 		//private const CHANGE_DIR_STATE:int = 5;
 		//private var jumpState:int = BIG_JUMP_STATE;
 		
-		//private var dirChanged:Boolean;
+		private var dirChanged:Boolean;
 		
 		private const DIR_LEFT:int = -1;
 		private const DIR_RIGHT:int = 1;
@@ -47,6 +50,26 @@ package
 			facing = RIGHT;
 			
 			frame = NO_SQUAT;
+			
+			stopAction
+			.setInit(stopAction_init)
+			.setNext(stopAction_next);
+			
+			changeDirAction
+			.setInit(changeDir_init)
+			.setUpdate(changeDir_update)
+			.setNext(smallJump_next);
+			
+			smallJumpAction
+			.setInit(smallJump_init)
+			.setNext(smallJump_next);
+			
+			bigJumpAction
+			.setInit(bigJump_init)
+			.setUpdate(bigJump_update)
+			.setNext(bigJump_next);
+			
+			actionManager.init(stopAction);
 			
 			x = (FlxG.width - width) / 2;
 			y = 0;
@@ -100,6 +123,63 @@ package
 			actionManager.update();
 		}
 		
+		// STOP
+		
+		private function stopAction_init():void
+		{
+			frame = SMALL_SQUAT;
+			velocity.x = 0;
+		}
+		
+		private function stopAction_next():Action
+		{
+			//if (!isTouching(FLOOR)) return bigJumpAction;
+			var f:int = facing == RIGHT ? 1 : -1;
+			if (keyDir != 0) {
+				if (keyDir == f) return smallJumpAction;
+				return changeDirAction;
+			}
+			return null;
+		}
+		
+		// CHANGE DIR
+		
+		private function changeDir_init():void
+		{
+			frame = NO_SQUAT;
+			velocity.y = -100;
+			dirChanged = false;
+		}
+		
+		private function changeDir_update():void
+		{
+			if (!dirChanged && (velocity.y > 0)) {
+				if (facing == LEFT) {
+					facing = RIGHT;
+				} else {
+					facing = LEFT;
+				}
+				dirChanged = true;
+			}
+		}
+		
+		// SMALL JUMP
+		
+		private function smallJump_init():void
+		{
+			frame = NO_SQUAT;
+			velocity.y = -100;
+			velocity.x = keyDir * 100;
+		}
+		
+		private function smallJump_next():Action
+		{
+			if (isTouching(FLOOR)) return stopAction;
+			return null;
+		}
+		
+		// BIG JUMP
+		
 		private function bigJump_init():void
 		{
 			frame = NO_SQUAT;
@@ -110,10 +190,10 @@ package
 			//
 		}
 		
-		private function bugJump_next():void
+		private function bigJump_next():Action
 		{
 			if (isTouching(FLOOR)) {
-				
+				return stopAction;
 			}
 			return null;
 		}

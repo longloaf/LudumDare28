@@ -7,10 +7,10 @@ package
 	public class ActionManager 
 	{
 		
-		private var action:Action = null;
+		public var action:Action = null;
 		private var actionInited:Boolean = false;
 		
-		public function init(a:Action):void;
+		public function init(a:Action):void
 		{
 			if (a == null) throw new Error();
 			action = a;

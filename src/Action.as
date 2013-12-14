@@ -6,9 +6,15 @@ package
 	 */
 	public class Action 
 	{
+		public var name:String;
+		public var init:Function = G.NIL_FUNC;
+		public var update:Function = G.NIL_FUNC;
+		public var next:Function = G.NIL_FUNC;
 		
-		private var _init:Function = G.NIL_FUNC;
-		private var _update:Function = G.NIL_FUNC;
+		public function Action(n:String = "UNKNOWN ACTION")
+		{
+			name = n;
+		}
 		
 		public function setInit(f:Function):Action
 		{
@@ -22,19 +28,10 @@ package
 			return this;
 		}
 		
-		public function init():void
+		public function setNext(f:Function):Action
 		{
-			_init();
-		}
-		
-		public function update():void
-		{
-			_update();
-		}
-		
-		public function next():Action
-		{
-			return null;
+			next = f;
+			return this;
 		}
 		
 	}
