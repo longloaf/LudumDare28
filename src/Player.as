@@ -11,15 +11,25 @@ package
 		[Embed(source = "data/player_100x160_3.png")]
 		private static const Img:Class;
 		
-		private const SMALL_JUMP_STATE:int = 0;
-		private const SMALL_SUMP_FINISH_STATE:int = 1;
-		private const BIG_JUMP_PREPARE_STATE:int = 2;
-		private const BIG_JUMP_STATE:int = 3;
-		private const BIG_JUMP_FINISH_STATE:int = 4;
-		private const CHANGE_DIR_STATE:int = 5;
-		private var jumpState:int = BIG_JUMP_STATE;
+		private var actionManager:ActionManager = new ActionManager();
 		
-		private var dirChanged:Boolean;
+		private var bigJumpAction:Action = new Action();
+		
+		//private const SMALL_JUMP_STATE:int = 0;
+		//private const SMALL_SUMP_FINISH_STATE:int = 1;
+		//private const BIG_JUMP_PREPARE_STATE:int = 2;
+		//private const BIG_JUMP_STATE:int = 3;
+		//private const BIG_JUMP_FINISH_STATE:int = 4;
+		//private const CHANGE_DIR_STATE:int = 5;
+		//private var jumpState:int = BIG_JUMP_STATE;
+		
+		//private var dirChanged:Boolean;
+		
+		private const DIR_LEFT:int = -1;
+		private const DIR_RIGHT:int = 1;
+		private const DIR_STOP:int = 0;
+		
+		private var keyDir:int = DIR_STOP;
 		
 		private const NO_SQUAT:int = 0;
 		private const SMALL_SQUAT:int = 1;
@@ -42,7 +52,7 @@ package
 			y = 0;
 		}
 		
-		override public function update():void 
+		/*override public function update():void 
 		{
 			var dir:int = 0;
 			if (FlxG.keys.RIGHT) dir += 1;
@@ -80,16 +90,42 @@ package
 					setFacing(dir);
 				}
 			}
+		}*/
+			
+		override public function update():void 
+		{
+			keyDir = DIR_STOP;
+			if (FlxG.keys.LEFT) keyDir += DIR_LEFT;
+			if (FlxG.keys.RIGHT) keyDir += DIR_RIGHT;
+			actionManager.update();
 		}
 		
-		private function setFacing(dir:int):void
+		private function bigJump_init():void
+		{
+			frame = NO_SQUAT;
+		}
+		
+		private function bigJump_update():void
+		{
+			//
+		}
+		
+		private function bugJump_next():void
+		{
+			if (isTouching(FLOOR)) {
+				
+			}
+			return null;
+		}
+		
+		/*private function setFacing(dir:int):void
 		{
 			if (dir == 1) {
 				facing = RIGHT;
 			} else if (dir == -1) {
 				facing = LEFT;
 			}
-		}
+		}*/
 		
 	}
 

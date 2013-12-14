@@ -7,9 +7,8 @@ package
 	public class Action 
 	{
 		
-		public var init:Function = G.NIL_FUNC;
-		public var update:Function = G.NIL_FUNC;
-		public var next:Function = G.NIL_FUNC;
+		private var _init:Function = G.NIL_FUNC;
+		private var _update:Function = G.NIL_FUNC;
 		
 		public function setInit(f:Function):Action
 		{
@@ -23,10 +22,19 @@ package
 			return this;
 		}
 		
-		public function setNext(f:Function):Action
+		public function init():void
 		{
-			next = f;
-			return this;
+			_init();
+		}
+		
+		public function update():void
+		{
+			_update();
+		}
+		
+		public function next():Action
+		{
+			return null;
 		}
 		
 	}
