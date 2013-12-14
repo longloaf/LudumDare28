@@ -1,25 +1,21 @@
 package 
 {
-	import flash.display.Sprite;
-	import flash.events.Event;
+	import org.flixel.FlxGame;
+	
+	[SWF(width = "800", height = "450", backgroundColor = "#000000")]
+	[Frame(factoryClass="Preloader")]
 	
 	/**
 	 * ...
 	 * @author Maksim Soldatov
 	 */
-	public class Main extends Sprite 
+	public class Main extends FlxGame
 	{
 		
 		public function Main():void 
 		{
-			if (stage) init();
-			else addEventListener(Event.ADDED_TO_STAGE, init);
-		}
-		
-		private function init(e:Event = null):void 
-		{
-			removeEventListener(Event.ADDED_TO_STAGE, init);
-			// entry point
+			super(800, 450, PlayState, 1, G.FPS, G.FPS, true);
+			forceDebugger = true;
 		}
 		
 	}
