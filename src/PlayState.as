@@ -30,6 +30,8 @@ package
 		{
 			super.update();
 			FlxG.collide(floor, player);
+			
+			if (FlxG.keys.justPressed("ENTER")) FlxG.resetState();
 		}
 		
 	}

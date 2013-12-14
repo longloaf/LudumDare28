@@ -8,7 +8,7 @@ package
 	 */
 	public class Player extends FlxSprite
 	{
-		[Embed(source = "data/player.png")]
+		[Embed(source = "data/player_100x160_3.png")]
 		private static const Img:Class;
 		
 		private const SMALL_JUMP_STATE:int = 0;
@@ -20,7 +20,11 @@ package
 		
 		public function Player() 
 		{
-			loadGraphic(Img, false, true);
+			loadGraphic(Img, true, true, 100, 160);
+			width /= 2;
+			height = 150;
+			centerOffsets();
+			offset.y = 5;
 			
 			acceleration.y = 400;
 			facing = RIGHT;
@@ -59,13 +63,22 @@ package
 				drag.x = 0;
 				if (jumpState == CHANGE_DIR_STATE) {
 					if (!dirChanged && (velocity.y > 0)) {
-						facing = facing == RIGHT ? LEFT : RIGHT;
+						setFacing(dir);
 						dirChanged = true;
 					}
 				} else if (jumpState == BIG_JUMP_STATE) {
-					acceleration.x = 50 * dir;
-					facing = dir == 1 ? RIGHT : LEFT;
+					acceleration.x = 100 * dir;
+					setFacing(dir);
 				}
+			}
+		}
+		
+		private function setFacing(dir:int):void
+		{
+			if (dir == 1) {
+				facing = RIGHT;
+			} else if (dir == -1) {
+				facing = LEFT;
 			}
 		}
 		
