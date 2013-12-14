@@ -12,11 +12,18 @@ package
 		private static const Img:Class;
 		
 		private const SMALL_JUMP_STATE:int = 0;
-		private const BIG_JUMP_STATE:int = 1;
-		private const CHANGE_DIR_STATE:int = 2;
+		private const SMALL_SUMP_FINISH_STATE:int = 1;
+		private const BIG_JUMP_PREPARE_STATE:int = 2;
+		private const BIG_JUMP_STATE:int = 3;
+		private const BIG_JUMP_FINISH_STATE:int = 4;
+		private const CHANGE_DIR_STATE:int = 5;
 		private var jumpState:int = BIG_JUMP_STATE;
 		
 		private var dirChanged:Boolean;
+		
+		private const NO_SQUAT:int = 0;
+		private const SMALL_SQUAT:int = 1;
+		private const BIG_SQUAT:int = 2;
 		
 		public function Player() 
 		{
@@ -29,6 +36,8 @@ package
 			acceleration.y = 400;
 			facing = RIGHT;
 			
+			frame = NO_SQUAT;
+			
 			x = (FlxG.width - width) / 2;
 			y = 0;
 		}
@@ -40,8 +49,8 @@ package
 			if (FlxG.keys.LEFT) dir -= 1;
 			
 			if (isTouching(FLOOR)) {
+				velocity.x = 0;
 				acceleration.x = 0;
-				drag.x = 400;
 				if (FlxG.keys.UP) {
 					velocity.y = -300;
 					jumpState = BIG_JUMP_STATE;
