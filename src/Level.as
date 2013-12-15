@@ -12,7 +12,7 @@ package
 		[Embed(source = "data/map1.txt", mimeType = "application/octet-stream")]
 		private static const Map:Class;
 		
-		[Embed(source = "data/tiles_32x32_2.png")]
+		[Embed(source = "data/tiles_32x32_20.png")]
 		private static const Tiles:Class;
 		
 		private var tileMap:FlxTilemap;
@@ -21,7 +21,7 @@ package
 		override public function create():void 
 		{
 			tileMap = new FlxTilemap();
-			tileMap.loadMap(new Map, Tiles, 32, 32, FlxTilemap.OFF, 0, 0, 1);
+			tileMap.loadMap(new Map, Tiles, 32, 32, FlxTilemap.OFF, 0, 0, 10);
 			tileMap.reset(0, FlxG.height - tileMap.height);
 			
 			player = new Player();
