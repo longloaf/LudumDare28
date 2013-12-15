@@ -15,7 +15,7 @@ package
 		public static const TILE_SIZE:int = 32;
 		
 		public static const LEVELS:Vector.<Class> = 
-		Vector.<Class>([TestLevel, Level1, Level2, Level3, Level4, Level5]);
+		Vector.<Class>([Level1, Level2, Level3, Level4, Level5]);
 		
 		public static var currentLevel:int = 0;
 		

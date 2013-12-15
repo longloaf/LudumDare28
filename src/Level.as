@@ -5,6 +5,7 @@ package
 	import org.flixel.FlxObject;
 	import org.flixel.FlxSprite;
 	import org.flixel.FlxState;
+	import org.flixel.FlxText;
 	import org.flixel.FlxTilemap;
 	/**
 	 * ...
@@ -24,6 +25,8 @@ package
 		private var player:Player;
 		private var switchGroup:FlxGroup;
 		
+		private var txt:FlxText;
+		
 		override public function create():void 
 		{
 			tileMap = new FlxTilemap();
@@ -41,6 +44,13 @@ package
 			
 			switchGroup = new FlxGroup();
 			
+			txt = new FlxText(0, 200, FlxG.width, "R - RESTART, Q - QUIT");
+			txt.size = 32;
+			txt.color = FlxG.BLACK;
+			txt.alignment = "center";
+			txt.visible = false;
+			txt.scrollFactor.x = txt.scrollFactor.y = 0;
+			
 			FlxG.camera.follow(player);
 			tileMap.follow();
 			
@@ -53,6 +63,7 @@ package
 			add(player);
 			add(switchGroup);
 			add(player.foot);
+			add(txt);
 			
 			makeLevel();
 			
@@ -77,14 +88,20 @@ package
 			FlxG.collide(player, platformGroup);
 			FlxG.collide(player, doorGroup);
 			
-			player.playerPostUpdate();
+			player.updateFoot();
 			FlxG.overlap(player.foot, badBlockGroup, ovFootBadBlock);
 			
 			FlxG.overlap(player, switchGroup, ovPlayerSwitch);
 			
 			FlxG.overlap(player, finish, ovPlayerFinish);
 			
-			if (FlxG.keys.justPressed("ENTER")) FlxG.resetState();
+			txt.visible = !player.exists;
+			
+			if (FlxG.keys.justPressed("R")) {
+				FlxG.resetState();
+			} else if (FlxG.keys.justPressed("Q")) {
+				FlxG.switchState(new MenuState());
+			}
 		}
 		
 		public function makePlatform(tx:int, ty:int, width:int = 1, height:int = 1, step:int = 1):void

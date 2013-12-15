@@ -6,7 +6,7 @@ package
 	 * ...
 	 * @author Maksim Soldatov
 	 */
-	public class Player extends FlxSprite
+	public class Player extends Creature
 	{
 		[Embed(source = "data/player_100x120_3.png")]
 		private static const Img:Class;
@@ -48,8 +48,6 @@ package
 		private const BIG_JUMP_KEY:String = "Z";
 		private const VERTICAL_JUMP_KEY:String = "UP";
 		private const ATTACK_KEY:String = "X";
-		
-		public var foot:FlxSprite;
 		
 		public function Player() 
 		{
@@ -98,11 +96,10 @@ package
 			x = (FlxG.width - width) / 2;
 			y = 0;
 			
-			foot = new FlxSprite();
 			foot.makeGraphic(10, 5, 0xFFFF0000);
 		}
 			
-		override public function update():void 
+		override public function updateGameObject():void 
 		{
 			keyDir = DIR_STOP;
 			if (FlxG.keys.pressed(LEFT_KEY)) keyDir += DIR_LEFT;
@@ -216,12 +213,12 @@ package
 		
 		//
 		
-		override public function reset(X:Number, Y:Number):void 
-		{
-			super.reset(X, Y);
-			updateFoot();
-			foot.reset(foot.x, foot.y);
-		}
+		//override public function reset(X:Number, Y:Number):void 
+		//{
+			//super.reset(X, Y);
+			//updateFoot();
+			//foot.reset(foot.x, foot.y);
+		//}
 		
 		private function fdir():int
 		{
@@ -229,16 +226,16 @@ package
 			return DIR_RIGHT;
 		}
 		
-		public function playerPostUpdate():void
-		{
-			updateFoot();
-		}
-		
-		private function updateFoot():void
-		{
-			foot.x = x + (width - foot.width) / 2;
-			foot.y = y + height;
-		}
+		//public function playerPostUpdate():void
+		//{
+			//updateFoot();
+		//}
+		//
+		//private function updateFoot():void
+		//{
+			//foot.x = x + (width - foot.width) / 2;
+			//foot.y = y + height;
+		//}
 		
 	}
 
