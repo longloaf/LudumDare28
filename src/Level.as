@@ -20,6 +20,7 @@ package
 		
 		private var tileMap:FlxTilemap;
 		private var platformGroup:FlxGroup;
+		private var doorGroup:FlxGroup;
 		private var player:Player;
 		private var switchGroup:FlxGroup;
 		
@@ -30,6 +31,8 @@ package
 			tileMap.reset(0, 0);
 			
 			platformGroup = new FlxGroup();
+			
+			doorGroup = new FlxGroup();
 			
 			player = new Player();
 			//player.reset(100, 100);
@@ -42,12 +45,13 @@ package
 			
 			add(tileMap);
 			add(platformGroup);
+			add(doorGroup);
 			add(player);
 			add(switchGroup);
 			
 			makePlatform(39, 7, 3, 8, 2);
-			makeSwitch(44, 6, true);
-			makeSwitch(46, 6, false);
+			makeSwitchAndDoor(44, 6, true, 49, 1);
+			makeSwitchAndDoor(46, 6, false, 49, 9);
 		}
 		
 		override public function update():void 
@@ -55,6 +59,7 @@ package
 			super.update();
 			FlxG.collide(player, tileMap);
 			FlxG.collide(player, platformGroup);
+			FlxG.collide(player, doorGroup);
 			FlxG.overlap(player, switchGroup, ovPlayerSwitch);
 			
 			if (FlxG.keys.justPressed("ENTER")) FlxG.resetState();
@@ -73,10 +78,14 @@ package
 			}
 		}
 		
-		public function makeSwitch(tx:int, ty:int, left:Boolean):void
+		public function makeSwitchAndDoor(sx:int, sy:int, left:Boolean, dx:int, dy:int):void
 		{
-			var s:Switch = new Switch(left);
-			moveSprite(s, tx, ty);
+			var d:Door = new Door();
+			moveSprite(d, dx, dy);
+			d.x += (G.TILE_SIZE - d.width) / 2;
+			doorGroup.add(d);
+			var s:Switch = new Switch(d, left);
+			moveSprite(s, sx, sy);
 			s.x += (2 * G.TILE_SIZE - s.width) / 2;
 			s.y -= s.height - G.TILE_SIZE;
 			switchGroup.add(s);
