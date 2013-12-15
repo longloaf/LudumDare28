@@ -19,6 +19,8 @@ package
 		private static const Tiles:Class;
 		
 		private var tileMap:FlxTilemap;
+		private var start:Start;
+		private var finish:Finish;
 		private var badBlockGroup:FlxGroup;
 		private var platformGroup:FlxGroup;
 		private var doorGroup:FlxGroup;
@@ -31,13 +33,16 @@ package
 			tileMap.loadMap(new Map, Tiles, 32, 32, FlxTilemap.OFF, 0, 0, 10);
 			tileMap.reset(0, 0);
 			
+			start = new Start();
+			finish = new Finish();
+			
 			badBlockGroup = new FlxGroup();
 			platformGroup = new FlxGroup();
 			doorGroup = new FlxGroup();
 			
 			player = new Player();
-			//player.reset(100, 100);
-			player.reset(38 * G.TILE_SIZE, 0);
+			player.reset(100, 100);
+			//player.reset(38 * G.TILE_SIZE, 0);
 			
 			switchGroup = new FlxGroup();
 			
@@ -45,6 +50,8 @@ package
 			tileMap.follow();
 			
 			add(tileMap);
+			add(start);
+			add(finish);
 			add(badBlockGroup);
 			add(platformGroup);
 			add(doorGroup);
@@ -52,12 +59,24 @@ package
 			add(switchGroup);
 			add(player.foot);
 			
-			makePlatform(39, 7, 3, 8, 2);
-			makeSwitchAndDoor(44, 6, true, 49, 1);
-			makeSwitchAndDoor(46, 6, false, 49, 9);
-			makeBadBlock(55, 7, 9, 1);
-			makeBadBlock(51, 9, 3, 2);
-			makeBadBlock(64, 13, 5);
+			makePlatform(39, 8, 3, 8, 2);
+			makeSwitchAndDoor(44, 7, true, 49, 2);
+			makeSwitchAndDoor(46, 7, false, 49, 10);
+			makeBadBlock(55, 8, 9, 1);
+			makeBadBlock(51, 10, 3, 2);
+			makeBadBlock(64, 14, 5);
+			makeStart(3, 13);
+			makeFinish(15, 13);
+		}
+		
+		public function getMap():Class
+		{
+			return null;
+		}
+		
+		public function makeLevel():void
+		{
+			
 		}
 		
 		override public function update():void 
@@ -96,9 +115,10 @@ package
 			d.x += (G.TILE_SIZE - d.width) / 2;
 			doorGroup.add(d);
 			var s:Switch = new Switch(d, left);
-			moveSprite(s, sx, sy);
-			s.x += (2 * G.TILE_SIZE - s.width) / 2;
-			s.y -= s.height - G.TILE_SIZE;
+			//moveSprite(s, sx, sy);
+			//s.x += (2 * G.TILE_SIZE - s.width) / 2;
+			//s.y -= s.height - G.TILE_SIZE;
+			moveSprite2(s, sx, sy);
 			switchGroup.add(s);
 		}
 		
@@ -114,9 +134,26 @@ package
 			}
 		}
 		
+		public function makeStart(tx:int, ty:int):void
+		{
+			moveSprite2(start, tx, ty);
+		}
+		
+		public function makeFinish(tx:int, ty:int):void
+		{
+			moveSprite2(finish, tx, ty);
+		}
+		
 		private function moveSprite(s:FlxSprite, tx:int, ty:int):void
 		{
 			s.reset(tileMap.x + tx * G.TILE_SIZE, tileMap.y + ty * G.TILE_SIZE);
+		}
+		
+		private function moveSprite2(s:FlxSprite, tx:int, ty:int):void
+		{
+			moveSprite(s, tx, ty);
+			s.x += (2 * G.TILE_SIZE - s.width) / 2;
+			s.y += G.TILE_SIZE - s.height;
 		}
 		
 		private function ovPlayerSwitch(o1:FlxObject, o2:FlxObject):void
