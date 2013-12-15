@@ -9,6 +9,11 @@ package
 	public class GameObject extends FlxSprite
 	{
 		
+		public function GameObject()
+		{
+			acceleration.y = G.GRAVITY;
+		}
+		
 		override final public function update():void 
 		{
 			if (y > FlxG.height) kill();

@@ -18,6 +18,12 @@ package
 		{
 			makeStart(2, 12);
 			makeFinish(56, 7);
+			for (var i:int = 0; i < tileMap.widthInTiles; ++i) {
+				if (tileMap.getTile(i, 13) < G.T_COLLIDE) {
+					makeBadBlock(i, 13);
+				}
+			}
+			makeWorm(12, 12);
 		}
 		
 	}

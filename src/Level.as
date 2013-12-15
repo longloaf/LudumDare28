@@ -16,21 +16,25 @@ package
 		[Embed(source = "data/tiles_32x32_20.png")]
 		private static const Tiles:Class;
 		
-		private var tileMap:FlxTilemap;
+		protected var tileMap:FlxTilemap;
 		private var start:Start;
 		private var finish:Finish;
 		private var badBlockGroup:FlxGroup;
 		private var platformGroup:FlxGroup;
 		private var doorGroup:FlxGroup;
 		private var player:Player;
+		private var enemyGroup:FlxGroup;
 		private var switchGroup:FlxGroup;
+		
+		private var solidGroup:FlxGroup;
+		private var footGroup:FlxGroup;
 		
 		private var txt:FlxText;
 		
 		override public function create():void 
 		{
 			tileMap = new FlxTilemap();
-			tileMap.loadMap(new (getMap()), Tiles, 32, 32, FlxTilemap.OFF, 0, 0, 10);
+			tileMap.loadMap(new (getMap()), Tiles, 32, 32, FlxTilemap.OFF, G.T_START, G.T_DRAW, G.T_COLLIDE);
 			tileMap.reset(0, 0);
 			
 			start = new Start();
@@ -41,8 +45,10 @@ package
 			doorGroup = new FlxGroup();
 			
 			player = new Player();
+			enemyGroup = new FlxGroup();
 			
 			switchGroup = new FlxGroup();
+			footGroup = new FlxGroup();
 			
 			txt = new FlxText(0, 200, FlxG.width, "R - RESTART, Q - QUIT");
 			txt.size = 32;
@@ -54,6 +60,14 @@ package
 			FlxG.camera.follow(player);
 			tileMap.follow();
 			
+			solidGroup = new FlxGroup();
+			solidGroup.add(tileMap);
+			solidGroup.add(badBlockGroup);
+			solidGroup.add(platformGroup);
+			solidGroup.add(doorGroup);
+			
+			footGroup.add(player.foot);
+			
 			add(tileMap);
 			add(start);
 			add(finish);
@@ -61,8 +75,9 @@ package
 			add(platformGroup);
 			add(doorGroup);
 			add(player);
+			add(enemyGroup);
 			add(switchGroup);
-			add(player.foot);
+			add(footGroup);
 			add(txt);
 			
 			makeLevel();
@@ -83,13 +98,13 @@ package
 		override public function update():void 
 		{
 			super.update();
-			FlxG.collide(player, tileMap);
-			FlxG.collide(player, badBlockGroup);
-			FlxG.collide(player, platformGroup);
-			FlxG.collide(player, doorGroup);
+			FlxG.collide(player, solidGroup);
+			FlxG.collide(enemyGroup, solidGroup);
 			
 			player.updateFoot();
-			FlxG.overlap(player.foot, badBlockGroup, ovFootBadBlock);
+			enemyGroup.callAll("updateFoot");
+			
+			FlxG.overlap(footGroup, badBlockGroup, ovFootBadBlock);
 			
 			FlxG.overlap(player, switchGroup, ovPlayerSwitch);
 			
@@ -147,6 +162,19 @@ package
 		public function makeFinish(tx:int, ty:int):void
 		{
 			moveSprite2(finish, tx, ty);
+		}
+		
+		public function makeWorm(tx:int, ty:int):void
+		{
+			var w:Worm = new Worm(player);
+			moveSprite2(w, tx, ty);
+			addEnemy(w);
+		}
+		
+		private function addEnemy(c:Creature):void
+		{
+			enemyGroup.add(c);
+			footGroup.add(c.foot);
 		}
 		
 		private function moveSprite(s:FlxSprite, tx:int, ty:int):void

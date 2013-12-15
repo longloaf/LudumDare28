@@ -1,5 +1,6 @@
 package  
 {
+	import org.flixel.FlxG;
 	import org.flixel.FlxSprite;
 	/**
 	 * ...
@@ -9,6 +10,14 @@ package
 	{
 		
 		public var foot:FlxSprite = new FlxSprite;
+		
+		public function Creature()
+		{
+			create();
+			foot.makeGraphic(width, 5, FlxG.RED);
+		}
+		
+		public function create():void { }
 		
 		override public function reset(X:Number, Y:Number):void 
 		{

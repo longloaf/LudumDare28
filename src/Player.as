@@ -22,7 +22,6 @@ package
 		
 		private var dirChanged:Boolean;
 		private var verticalJump:Boolean;
-		private const GRAVITY:Number = 1000;
 		private const BIG_JUMP_VEL_Y:Number = 300;
 		private const BIG_JUMP_VEL_X:Number = 200;
 		private const VERTICAL_JUMP_VEL_Y:Number = 400;
@@ -49,7 +48,7 @@ package
 		private const VERTICAL_JUMP_KEY:String = "UP";
 		private const ATTACK_KEY:String = "X";
 		
-		public function Player() 
+		override public function create():void 
 		{
 			loadGraphic(Img, true, true, 100, 120);
 			width /= 4;
@@ -61,7 +60,6 @@ package
 			addAnimation(SQUAT_ANIM, [BIG_SQUAT], 10, false);
 			addAnimation(BIG_JUMP_ANIM, [SMALL_SQUAT, NO_SQUAT], 10, false);
 			
-			acceleration.y = GRAVITY;
 			facing = RIGHT;
 			
 			frame = NO_SQUAT;
@@ -95,8 +93,6 @@ package
 			
 			x = (FlxG.width - width) / 2;
 			y = 0;
-			
-			foot.makeGraphic(10, 5, 0xFFFF0000);
 		}
 			
 		override public function updateGameObject():void 

@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.73125"
-     inkscape:cx="217.73931"
-     inkscape:cy="285.78931"
+     inkscape:zoom="1"
+     inkscape:cx="621.05958"
+     inkscape:cy="423.12831"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -276,51 +276,6 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\player_100x120_3.png"
-       id="g3911"
-       transform="matrix(0.65905541,0,0,0.49429154,212.71016,198.59457)">
-      <rect
-         inkscape:transform-center-x="-4.6892438"
-         transform="matrix(0.97608929,-0.21736997,0.21736997,0.97608929,0,0)"
-         inkscape:transform-center-y="21.056826"
-         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect3913"
-         width="29.888754"
-         height="63.948032"
-         x="42.028641"
-         y="670.66278" />
-      <path
-         transform="translate(9.7553043,9.707141)"
-         d="m 236.32969,542.51562 c 0,12.4763 -10.11404,22.59034 -22.59034,22.59034 -12.4763,0 -22.59034,-10.11404 -22.59034,-22.59034 0,-12.47629 10.11404,-22.59033 22.59034,-22.59033 12.4763,0 22.59034,10.11404 22.59034,22.59033 z"
-         sodipodi:ry="22.590338"
-         sodipodi:rx="22.590338"
-         sodipodi:cy="542.51562"
-         sodipodi:cx="213.73935"
-         id="path3915"
-         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         sodipodi:type="arc" />
-      <rect
-         transform="matrix(0.98348171,0.18100754,-0.18100754,0.98348171,0,0)"
-         y="520.89825"
-         x="286.24066"
-         height="83.410477"
-         width="41.705238"
-         id="rect3917"
-         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-      <rect
-         inkscape:transform-center-x="-5.3204019"
-         transform="matrix(0.9691105,0.24662693,-0.24662693,0.9691105,0,0)"
-         inkscape:transform-center-y="-20.906287"
-         y="611.28467"
-         x="359.65863"
-         height="63.948032"
-         width="29.888754"
-         id="rect3919"
-         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    </g>
-    <g
        inkscape:transform-center-x="-15.744501"
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -371,7 +326,8 @@
        id="g4668"
        inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\door.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-ydpi="90"
+       transform="translate(2.3912726,-33.477816)">
       <rect
          style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4649"
@@ -529,6 +485,120 @@
          id="path4717"
          d="m 253.9498,683.32652 7.08058,8.0317 2.42616,7.68761 -1.47503,1.27394 -2.43065,-8.75019 -7.60898,-8.34874 z"
          style="fill:#535d6c;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\player_100x120_3.png"
+       id="g3911"
+       transform="matrix(0.65905541,0,0,0.49429154,225.39179,176.19034)">
+      <rect
+         inkscape:transform-center-x="-4.6892438"
+         transform="matrix(0.97608929,-0.21736997,0.21736997,0.97608929,0,0)"
+         inkscape:transform-center-y="21.056826"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3913"
+         width="29.888754"
+         height="63.948032"
+         x="42.028641"
+         y="670.66278" />
+      <path
+         transform="translate(9.7553043,9.707141)"
+         d="m 236.32969,542.51562 c 0,12.4763 -10.11404,22.59034 -22.59034,22.59034 -12.4763,0 -22.59034,-10.11404 -22.59034,-22.59034 0,-12.47629 10.11404,-22.59033 22.59034,-22.59033 12.4763,0 22.59034,10.11404 22.59034,22.59033 z"
+         sodipodi:ry="22.590338"
+         sodipodi:rx="22.590338"
+         sodipodi:cy="542.51562"
+         sodipodi:cx="213.73935"
+         id="path3915"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <rect
+         transform="matrix(0.98348171,0.18100754,-0.18100754,0.98348171,0,0)"
+         y="520.89825"
+         x="286.24066"
+         height="83.410477"
+         width="41.705238"
+         id="rect3917"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:transform-center-x="-5.3204019"
+         transform="matrix(0.9691105,0.24662693,-0.24662693,0.9691105,0,0)"
+         inkscape:transform-center-y="-20.906287"
+         y="611.28467"
+         x="359.65863"
+         height="63.948032"
+         width="29.888754"
+         id="rect3919"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g4001"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\finish.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="586.1347"
+         x="424.26407"
+         height="165"
+         width="94"
+         id="rect3975"
+         style="color:#000000;fill:#939dac;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         y="601.1347"
+         x="439.26407"
+         height="150"
+         width="64"
+         id="rect3973"
+         style="color:#000000;fill:#373e48;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g4005"
+       transform="translate(-6,17)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\start.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="color:#000000;fill:#939dac;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3977"
+         width="94"
+         height="165"
+         x="589.72705"
+         y="587.54889" />
+      <rect
+         style="color:#000000;fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3979"
+         width="64"
+         height="150"
+         x="604.72705"
+         y="602.54889" />
+      <rect
+         y="602.54889"
+         x="629.72705"
+         height="150"
+         width="1"
+         id="rect3993"
+         style="color:#000000;fill:#241f1c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#241f1c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3995"
+         width="1"
+         height="150"
+         x="616.72705"
+         y="602.54889" />
+      <rect
+         y="602.54889"
+         x="642.72705"
+         height="150"
+         width="1"
+         id="rect3997"
+         style="color:#000000;fill:#241f1c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#241f1c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3999"
+         width="1"
+         height="150"
+         x="655.72705"
+         y="602.54889" />
     </g>
   </g>
 </svg>

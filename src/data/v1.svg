@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4386681"
-     inkscape:cx="201.26503"
-     inkscape:cy="230.9736"
+     inkscape:cx="562.08826"
+     inkscape:cy="199.12399"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -37,7 +37,9 @@
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:object-nodes="false" />
+     inkscape:object-nodes="true"
+     inkscape:object-paths="false"
+     inkscape:snap-nodes="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -108,6 +110,127 @@
          height="160"
          x="325.18036"
          y="599.90094" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#6f7c91;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 139.75931,309.29367 152.41774,0 0,136.19821 -152.41774,0 z"
+       id="rect2985" />
+    <g
+       transform="matrix(0.3,0,0,0.3,375.58841,575.22702)"
+       id="g4969"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path4971"
+         d="m 520.66718,744.47202 200,0 0,100 -200,0 z"
+         style="color:#000000;fill:#6f7c91;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#6f7c91;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 520.66718,844.47202 200,0 0,100 -200,0 z"
+         id="path4973" />
+      <path
+         id="path4975"
+         d="m 520.66718,944.47202 200,0 0,99.99998 -200,0 z"
+         style="color:#000000;fill:#6f7c91;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#6f7c91;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 520.66718,1044.472 200,0 0,100 -200,0 z"
+         id="path4977" />
+    </g>
+    <g
+       transform="matrix(0.3,0,0,0.3,398.85549,593.51309)"
+       id="g4979"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4981"
+         transform="translate(-0.38970779,32.73721)"
+         d="m 594.875,700.65625 -17.71875,4.15625 -10.8125,11.3125 -9.34375,-2.9375 -5.625,-6.65625 -11.0625,-1.21875 -12.78125,3.9375 -11.8125,-1 -14.25,17.46875 -12.53125,5.40625 -8.09375,11.53125 3.6875,8.125 35.78125,0 5.1875,-2.875 4.84375,-3.46875 14.25,1.03125 10.78125,5.3125 23.03125,0 10.0625,-15.75 17.6875,-11.78125 -0.71875,-4.4375 -17.71875,7.15625 11.8125,-16 -4.65625,-9.3125 z"
+         style="fill:#ffcbc5;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#c83737;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4983"
+         sodipodi:cx="580.41309"
+         sodipodi:cy="748.61456"
+         sodipodi:rx="4.3739591"
+         sodipodi:ry="2.7032554"
+         d="m 584.78705,748.61456 c 0,1.49297 -1.95829,2.70326 -4.37396,2.70326 -2.41567,0 -4.37396,-1.21029 -4.37396,-2.70326 0,-1.49296 1.95829,-2.70325 4.37396,-2.70325 2.41567,0 4.37396,1.21029 4.37396,2.70325 z"
+         transform="matrix(0.9145033,0,0,1.4796974,48.757948,-356.4732)" />
+    </g>
+    <g
+       transform="matrix(0.3,0,0,0.3,399.04326,614.07799)"
+       id="g4985"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4987"
+         d="m 591.28125,762.125 -16.96875,5.90625 -8.59375,12.28125 -7.375,-4.65625 -6.625,-6.40625 -12.0625,-2.4375 -13.5,3.6875 -12.78125,-0.25 -12.53125,19.65625 -12.53125,5.40625 -8.125,11.53125 3.6875,8.125 31.28125,0 11.03125,-7.625 13.1875,-1.375 16.65625,9 21.71875,0 10.09375,-15.71875 16.9375,-14.25 -1.46875,-5.40625 -16.21875,10.5625 10.8125,-19.4375 -6.625,-8.59375 z"
+         style="fill:#ffcbc5;fill-opacity:1;stroke:none" />
+      <path
+         transform="matrix(0.9145033,0,0,1.4796974,47.037695,-323.29689)"
+         d="m 584.78705,748.61456 c 0,1.49297 -1.95829,2.70326 -4.37396,2.70326 -2.41567,0 -4.37396,-1.21029 -4.37396,-2.70326 0,-1.49296 1.95829,-2.70325 4.37396,-2.70325 2.41567,0 4.37396,1.21029 4.37396,2.70325 z"
+         sodipodi:ry="2.7032554"
+         sodipodi:rx="4.3739591"
+         sodipodi:cy="748.61456"
+         sodipodi:cx="580.41309"
+         id="path4989"
+         style="color:#000000;fill:#c83737;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       transform="matrix(0.3,0,0,0.3,398.35617,622.59346)"
+       id="g4991"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4993"
+         d="m 466.05607,886.58385 159.87009,0 1.39018,-6.25579 -20.50508,-0.69508 21.20016,-6.60333 -0.69508,-10.77386 -19.80999,-5.90824 -21.20017,4.51807 -20.85262,-9.03614 -11.81648,3.47544 -9.38368,-3.12789 -15.29192,-0.34755 -9.03614,5.90824 -21.89525,-1.73771 -11.81649,8.34104 -18.76736,4.17053 -5.90824,10.42631 z"
+         style="fill:#ffcbc5;fill-opacity:1;stroke:none" />
+      <path
+         transform="matrix(0.9145033,0,0,1.4796974,73.241228,-239.55899)"
+         d="m 584.78705,748.61456 c 0,1.49297 -1.95829,2.70326 -4.37396,2.70326 -2.41567,0 -4.37396,-1.21029 -4.37396,-2.70326 0,-1.49296 1.95829,-2.70325 4.37396,-2.70325 2.41567,0 4.37396,1.21029 4.37396,2.70325 z"
+         sodipodi:ry="2.7032554"
+         sodipodi:rx="4.3739591"
+         sodipodi:cy="748.61456"
+         sodipodi:cx="580.41309"
+         id="path4995"
+         style="color:#000000;fill:#c83737;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       transform="matrix(0.3,0,0,0.3,396.06237,629.34278)"
+       id="g4997"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4999"
+         d="m 496.63991,964.08609 39.27244,0 9.03613,-14.59684 4.17053,-16.68209 4.86561,18.07227 10.07877,13.20666 44.13804,0 1.73772,0 1.04263,-7.99351 -20.85262,-3.82298 22.93788,0.34755 -1.39017,-9.03614 -15.63947,-9.38368 -15.63946,-1.39017 -6.95087,-13.90175 1.04263,-7.9935 -13.90175,-12.51158 -25.02315,-4.17052 -16.33455,18.07227 -1.39017,22.93788 -18.41982,12.16403 -7.64596,9.38368 z"
+         style="fill:#ffcbc5;fill-opacity:1;stroke:none" />
+      <path
+         transform="matrix(0.9145033,0,0,1.4796974,63.857548,-164.14201)"
+         d="m 584.78705,748.61456 c 0,1.49297 -1.95829,2.70326 -4.37396,2.70326 -2.41567,0 -4.37396,-1.21029 -4.37396,-2.70326 0,-1.49296 1.95829,-2.70325 4.37396,-2.70325 2.41567,0 4.37396,1.21029 4.37396,2.70325 z"
+         sodipodi:ry="2.7032554"
+         sodipodi:rx="4.3739591"
+         sodipodi:cy="748.61456"
+         sodipodi:cx="580.41309"
+         id="path5001"
+         style="color:#000000;fill:#c83737;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
     </g>
   </g>
   <g
