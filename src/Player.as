@@ -8,7 +8,7 @@ package
 	 */
 	public class Player extends Creature
 	{
-		[Embed(source = "data/player_100x120_3.png")]
+		[Embed(source = "data/player_100x130_3.png")]
 		private static const Img:Class;
 		
 		public var actionManager:ActionManager = new ActionManager();
@@ -50,11 +50,11 @@ package
 		
 		override protected function create():void 
 		{
-			loadGraphic(Img, true, true, 100, 120);
+			loadGraphic(Img, true, true, 100, 130);
 			width /= 4;
 			height = 110;
 			centerOffsets();
-			offset.y = 5;
+			offset.y = 15;
 			
 			addAnimation(LAND_ANIM, [SMALL_SQUAT], 15, false);
 			addAnimation(SQUAT_ANIM, [BIG_SQUAT], 10, false);
