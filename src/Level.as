@@ -45,6 +45,7 @@ package
 			doorGroup = new FlxGroup();
 			
 			player = new Player();
+			player.createCreature();
 			enemyGroup = new FlxGroup();
 			
 			switchGroup = new FlxGroup();
@@ -167,8 +168,17 @@ package
 		public function makeWorm(tx:int, ty:int):void
 		{
 			var w:Worm = new Worm(player);
+			w.createCreature();
 			moveSprite2(w, tx, ty);
 			addEnemy(w);
+		}
+		
+		public function makeSceleton(tx:int, ty:int, fast:Boolean):void
+		{
+			var s:Sceleton = new Sceleton(player, fast);
+			s.createCreature();
+			moveSprite2(s, tx, ty);
+			addEnemy(s);
 		}
 		
 		private function addEnemy(c:Creature):void

@@ -11,13 +11,13 @@ package
 		
 		public var foot:FlxSprite = new FlxSprite;
 		
-		public function Creature()
+		public function createCreature():void
 		{
 			create();
 			foot.makeGraphic(width, 5, FlxG.RED);
 		}
 		
-		public function create():void { }
+		protected function create():void { }
 		
 		override public function reset(X:Number, Y:Number):void 
 		{

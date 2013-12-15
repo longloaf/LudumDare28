@@ -21,6 +21,9 @@ package
 			makeBadBlock(12, 16, 2);
 			makePlatform(22, 8, 3, 7, 2);
 			makeSwitchAndDoor(2, 7, false, 29, 10);
+			makeSceleton(25, 15, false);
+			makeSceleton(55, 15, false);
+			makeSceleton(55, 15, true);
 		}
 		
 	}

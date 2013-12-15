@@ -48,7 +48,7 @@ package
 		private const VERTICAL_JUMP_KEY:String = "UP";
 		private const ATTACK_KEY:String = "X";
 		
-		override public function create():void 
+		override protected function create():void 
 		{
 			loadGraphic(Img, true, true, 100, 120);
 			width /= 4;

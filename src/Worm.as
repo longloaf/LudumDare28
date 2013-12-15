@@ -21,7 +21,7 @@ package
 			player = p;
 		}
 		
-		override public function create():void 
+		override protected function create():void 
 		{
 			loadGraphic(Img, true, true, 60, 30);
 			width /= 2;
@@ -37,14 +37,16 @@ package
 		override public function updateGameObject():void 
 		{
 			if (!run) {
-				var d:Number = (x + width / 2) - (player.x + player.width / 2);
-				if (Math.abs(d) < 300) {
-					run = true;
-					velocity.x = (d > 0 ? 1 : -1) * 130;
-					facing = d > 0 ? RIGHT : LEFT;
-					play(RUN);
-				} else {
-					facing = d > 0 ? LEFT : RIGHT;
+				if (player.exists) {
+					var d:Number = (x + width / 2) - (player.x + player.width / 2);
+					if (Math.abs(d) < 300) {
+						run = true;
+						velocity.x = (d > 0 ? 1 : -1) * 130;
+						facing = d > 0 ? RIGHT : LEFT;
+						play(RUN);
+					} else {
+						facing = d > 0 ? LEFT : RIGHT;
+					}
 				}
 			} 
 		}
