@@ -49,6 +49,11 @@ package
 			add(solidObjects);
 			add(player);
 			add(actionText);
+			
+			var s:FlxSprite = new FlxSprite();
+			s.makeGraphic(32, 32, 0xFFFF0000);
+			s.reset(100, 100);
+			add(s);
 		}
 		
 		override public function update():void 
