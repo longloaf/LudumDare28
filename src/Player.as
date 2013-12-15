@@ -49,6 +49,8 @@ package
 		private const VERTICAL_JUMP_KEY:String = "UP";
 		private const ATTACK_KEY:String = "X";
 		
+		public var foot:FlxSprite;
+		
 		public function Player() 
 		{
 			loadGraphic(Img, true, true, 100, 120);
@@ -95,6 +97,9 @@ package
 			
 			x = (FlxG.width - width) / 2;
 			y = 0;
+			
+			foot = new FlxSprite();
+			foot.makeGraphic(10, 5, 0xFFFF0000);
 		}
 			
 		override public function update():void 
@@ -211,10 +216,28 @@ package
 		
 		//
 		
+		override public function reset(X:Number, Y:Number):void 
+		{
+			super.reset(X, Y);
+			updateFoot();
+			foot.reset(foot.x, foot.y);
+		}
+		
 		private function fdir():int
 		{
 			if (facing == LEFT) return DIR_LEFT;
 			return DIR_RIGHT;
+		}
+		
+		public function playerPostUpdate():void
+		{
+			updateFoot();
+		}
+		
+		private function updateFoot():void
+		{
+			foot.x = x + (width - foot.width) / 2;
+			foot.y = y + height;
 		}
 		
 	}

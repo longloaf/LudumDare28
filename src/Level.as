@@ -19,6 +19,7 @@ package
 		private static const Tiles:Class;
 		
 		private var tileMap:FlxTilemap;
+		private var badBlockGroup:FlxGroup;
 		private var platformGroup:FlxGroup;
 		private var doorGroup:FlxGroup;
 		private var player:Player;
@@ -30,8 +31,8 @@ package
 			tileMap.loadMap(new Map, Tiles, 32, 32, FlxTilemap.OFF, 0, 0, 10);
 			tileMap.reset(0, 0);
 			
+			badBlockGroup = new FlxGroup();
 			platformGroup = new FlxGroup();
-			
 			doorGroup = new FlxGroup();
 			
 			player = new Player();
@@ -44,22 +45,32 @@ package
 			tileMap.follow();
 			
 			add(tileMap);
+			add(badBlockGroup);
 			add(platformGroup);
 			add(doorGroup);
 			add(player);
 			add(switchGroup);
+			add(player.foot);
 			
 			makePlatform(39, 7, 3, 8, 2);
 			makeSwitchAndDoor(44, 6, true, 49, 1);
 			makeSwitchAndDoor(46, 6, false, 49, 9);
+			makeBadBlock(55, 7, 9, 1);
+			makeBadBlock(51, 9, 3, 2);
+			makeBadBlock(64, 13, 5);
 		}
 		
 		override public function update():void 
 		{
 			super.update();
 			FlxG.collide(player, tileMap);
+			FlxG.collide(player, badBlockGroup);
 			FlxG.collide(player, platformGroup);
 			FlxG.collide(player, doorGroup);
+			
+			player.playerPostUpdate();
+			FlxG.overlap(player.foot, badBlockGroup, ovFootBadBlock);
+			
 			FlxG.overlap(player, switchGroup, ovPlayerSwitch);
 			
 			if (FlxG.keys.justPressed("ENTER")) FlxG.resetState();
@@ -91,6 +102,18 @@ package
 			switchGroup.add(s);
 		}
 		
+		public function makeBadBlock(tx:int, ty:int, width:int = 1, height:int = 1):void
+		{
+			if ((width < 1) || (height < 1)) throw new Error();
+			for (var x:int = 0; x < width; ++x) {
+				for (var y:int = 0; y < height; ++y) {
+					var b:BadBlock = new BadBlock();
+					moveSprite(b, tx + x, ty + y);
+					badBlockGroup.add(b);
+				}
+			}
+		}
+		
 		private function moveSprite(s:FlxSprite, tx:int, ty:int):void
 		{
 			s.reset(tileMap.x + tx * G.TILE_SIZE, tileMap.y + ty * G.TILE_SIZE);
@@ -99,6 +122,11 @@ package
 		private function ovPlayerSwitch(o1:FlxObject, o2:FlxObject):void
 		{
 			(o2 as Switch).doSwitch();
+		}
+		
+		private function ovFootBadBlock(o1:FlxObject, o2:FlxObject):void
+		{
+			(o2 as BadBlock).breakBlock();
 		}
 		
 	}

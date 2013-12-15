@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.365625"
-     inkscape:cx="177.30781"
-     inkscape:cy="580.49252"
+     inkscape:zoom="4.73125"
+     inkscape:cx="187.6529"
+     inkscape:cy="285.78931"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -36,9 +36,11 @@
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1"
-     inkscape:snap-center="true"
+     inkscape:snap-center="false"
      inkscape:snap-object-midpoints="false"
-     inkscape:snap-smooth-nodes="false" />
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-nodes="true"
+     inkscape:object-paths="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -365,5 +367,168 @@
        id="path4641"
        style="color:#000000;fill:#483e37;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        sodipodi:type="arc" />
+    <g
+       id="g4668"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\door.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4649"
+         width="4"
+         height="192"
+         x="17.217964"
+         y="573.75714" />
+      <rect
+         y="573.75714"
+         x="29.217964"
+         height="192"
+         width="4"
+         id="rect4651"
+         style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4653"
+         width="4"
+         height="192"
+         x="41.217964"
+         y="573.75714" />
+      <rect
+         style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4655"
+         width="32"
+         height="8"
+         x="15.217964"
+         y="757.75714" />
+      <rect
+         y="573.75714"
+         x="15.217964"
+         height="8"
+         width="32"
+         id="rect4657"
+         style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         y="698.42383"
+         x="18.599735"
+         height="4"
+         width="25.236458"
+         id="rect4664"
+         style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#241f1c;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4666"
+         width="24.813738"
+         height="4"
+         x="18.177013"
+         y="637.09045" />
+    </g>
+    <g
+       id="g4731"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\badBlock_40x40_3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="753.6568"
+         x="142.87979"
+         height="40"
+         width="40"
+         id="rect4687"
+         style="color:#000000;fill:#6f7c91;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#535d6c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4695"
+         width="40"
+         height="40"
+         x="182.87979"
+         y="753.6568" />
+      <rect
+         y="753.6568"
+         x="222.87979"
+         height="40"
+         width="40"
+         id="rect4707"
+         style="color:#000000;fill:#6f7c91;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g4689"
+       transform="matrix(0.99776739,-0.06678497,0.06678497,0.99776739,-138.06268,107.9492)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\badBlock_40x40_3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path4677"
+         d="m 239.81132,668.31977 32,0 0,32 -32,0 z"
+         style="color:#000000;fill:#b7bec8;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4681"
+         d="m 271.81132,668.31977 0,32 -32,0 5.36702,-1.03553 24.30647,-0.31704 1.26816,-28.63936 z"
+         style="fill:#1c1f24;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4683"
+         d="m 256.80317,668.31977 -4.86129,14.90107 -12.13056,7.92602 3.88749,-1.0568 10.25099,-6.76354 2.64201,-10.56804 z"
+         style="fill:#1c1f24;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4685"
+         d="m 253.9498,683.32652 7.08058,8.0317 2.42616,7.68761 -1.47503,1.27394 -2.43065,-8.75019 -7.60898,-8.34874 z"
+         style="fill:#1c1f24;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="translate(-52.931529,89.337029)"
+       id="g4697"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\badBlock_40x40_3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#b7bec8;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 239.81132,668.31977 32,0 0,32 -32,0 z"
+         id="path4699" />
+      <path
+         style="fill:#1c1f24;fill-opacity:1;stroke:none"
+         d="m 271.81132,668.31977 0,32 -32,0 5.36702,-1.03553 24.30647,-0.31704 1.26816,-28.63936 z"
+         id="path4701"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#1c1f24;fill-opacity:1;stroke:none"
+         d="m 256.80317,668.31977 -4.86129,14.90107 -12.13056,7.92602 3.88749,-1.0568 10.25099,-6.76354 2.64201,-10.56804 z"
+         id="path4703"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#1c1f24;fill-opacity:1;stroke:none"
+         d="m 253.9498,683.32652 7.08058,8.0317 2.42616,7.68761 -1.47503,1.27394 -2.43065,-8.75019 -7.60898,-8.34874 z"
+         id="path4705"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4709"
+       transform="matrix(0.99805002,0.06241919,-0.06241919,0.99805002,30.281983,74.703874)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\badBlock_40x40_3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path4711"
+         d="m 239.81132,668.31977 32,0 0,32 -32,0 z"
+         style="color:#000000;fill:#b7bec8;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4713"
+         d="m 271.81132,668.31977 0,32 -32,0 5.36702,-1.03553 24.30647,-0.31704 1.26816,-28.63936 z"
+         style="fill:#1c1f24;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4715"
+         d="m 256.80317,668.31977 -4.86129,14.90107 -12.13056,7.92602 3.88749,-1.0568 10.25099,-6.76354 2.64201,-10.56804 z"
+         style="fill:#1c1f24;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4717"
+         d="m 253.9498,683.32652 7.08058,8.0317 2.42616,7.68761 -1.47503,1.27394 -2.43065,-8.75019 -7.60898,-8.34874 z"
+         style="fill:#1c1f24;fill-opacity:1;stroke:none" />
+    </g>
   </g>
 </svg>
