@@ -76,6 +76,8 @@ package
 			add(platformGroup);
 			add(doorGroup);
 			add(player);
+			add(player.sword);
+			add(player.arm);
 			add(enemyGroup);
 			add(switchGroup);
 			add(footGroup);
@@ -103,7 +105,10 @@ package
 			FlxG.collide(enemyGroup, solidGroup);
 			
 			player.updateFoot();
+			player.updateArm();
 			enemyGroup.callAll("updateFoot");
+			
+			FlxG.overlap(player.sword, enemyGroup, ovSwordEnemy);
 			
 			FlxG.overlap(footGroup, badBlockGroup, ovFootBadBlock);
 			
@@ -213,6 +218,11 @@ package
 		{
 			finish.solid = false;
 			G.nextLevel();
+		}
+		
+		private function ovSwordEnemy(o1:FlxObject, o2:FlxObject):void
+		{
+			(o2 as Creature).kill();
 		}
 		
 	}

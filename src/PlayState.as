@@ -35,6 +35,7 @@ package
 			platform.reset(400, 300);
 			
 			player = new Player();
+			player.createCreature();
 			
 			actionText = new FlxText(10, 10, FlxG.width, "");
 			actionText.size = 16;
@@ -48,6 +49,7 @@ package
 			add(bg);
 			add(solidObjects);
 			add(player);
+			add(player.arm);
 			add(actionText);
 			
 			var s:FlxSprite = new FlxSprite();
@@ -61,6 +63,8 @@ package
 			super.update();
 			
 			FlxG.collide(player, solidObjects);
+			
+			player.updateArm();
 			
 			prevAction = nextAction;
 			nextAction = player.actionManager.action;

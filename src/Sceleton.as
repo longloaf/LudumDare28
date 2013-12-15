@@ -46,7 +46,7 @@ package
 			if (player.exists) {
 				var d:Number = (x + width / 2) - (player.x + player.width / 2);
 				facing = d > 0 ? LEFT : RIGHT;
-				if (Math.abs(d) < 400) {
+				if (Math.abs(d) < 500) {
 					velocity.x = (d > 0 ? -1 : 1) * vel;
 				} else {
 					velocity.x = 0;

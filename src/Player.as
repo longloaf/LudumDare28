@@ -11,6 +11,9 @@ package
 		[Embed(source = "data/player_100x130_3.png")]
 		private static const Img:Class;
 		
+		[Embed(source = "data/arm.png")]
+		private static const ArmImg:Class;
+		
 		public var actionManager:ActionManager = new ActionManager();
 		
 		private var stopAction:Action = new Action("STOP");
@@ -19,6 +22,7 @@ package
 		private var squatAction:Action = new Action("SQUAT");
 		private var bigJumpAction:Action = new Action("BIG JUMP");
 		private var landAction:Action = new Action("LAND");
+		private var attackAction:Action = new Action("ATTACK");
 		
 		private var dirChanged:Boolean;
 		private var verticalJump:Boolean;
@@ -47,6 +51,9 @@ package
 		private const BIG_JUMP_KEY:String = "Z";
 		private const VERTICAL_JUMP_KEY:String = "UP";
 		private const ATTACK_KEY:String = "X";
+		
+		public var arm:FlxSprite;
+		public var sword:FlxSprite;
 		
 		override protected function create():void 
 		{
@@ -89,7 +96,25 @@ package
 			.setInit(land_init)
 			.setNext(land_next);
 			
+			attackAction
+			.setInit(attack_init)
+			.setUpdate(attack_update)
+			.setNext(attack_next);
+			
 			actionManager.init(stopAction);
+			
+			arm = new FlxSprite();
+			arm.loadGraphic(ArmImg, false, true);
+			arm.origin.x = 10;
+			arm.origin.y = arm.height;
+			arm.antialiasing = true;
+			arm.visible = false;
+			arm.reset(100, 300);
+			
+			sword = new FlxSprite();
+			sword.makeGraphic(60, 90);
+			sword.solid = false;
+			sword.visible = false;
 			
 			x = (FlxG.width - width) / 2;
 			y = 0;
@@ -113,6 +138,9 @@ package
 		private function stopAction_next():Action
 		{
 			if (!isTouching(FLOOR)) return null;
+			if (FlxG.keys.pressed(ATTACK_KEY)) {
+				return attackAction;
+			}
 			if (FlxG.keys.pressed(VERTICAL_JUMP_KEY)) {
 				verticalJump = true;
 				return squatAction;
@@ -193,6 +221,40 @@ package
 			return null;
 		}
 		
+		// ATTACK
+		
+		private function attack_init():void
+		{
+			arm.visible = true;
+			arm.facing = facing;
+			if (arm.facing == RIGHT) {
+				arm.origin.x = 10;
+			} else {
+				arm.origin.x = arm.width - 10;
+			}
+			arm.angle = 0;
+		}
+		
+		private function attack_update():void
+		{
+			arm.angle += (facing == RIGHT ? 1 : -1) * FlxG.elapsed * 230;
+			if (Math.abs(arm.angle) > 30) {
+				sword.solid = true;
+				//sword.visible = true;
+			}
+		}
+		
+		private function attack_next():Action
+		{
+			if (((arm.facing == RIGHT) && (arm.angle > 90)) || ((arm.facing == LEFT) && (arm.angle < -90))) {
+				arm.visible = false;
+				sword.solid = false;
+				//sword.visible = false;
+				return stopAction;
+			}
+			return null;
+		}
+		
 		// LAND
 		
 		private function land_init():void
@@ -209,29 +271,26 @@ package
 		
 		//
 		
-		//override public function reset(X:Number, Y:Number):void 
-		//{
-			//super.reset(X, Y);
-			//updateFoot();
-			//foot.reset(foot.x, foot.y);
-		//}
-		
 		private function fdir():int
 		{
 			if (facing == LEFT) return DIR_LEFT;
 			return DIR_RIGHT;
 		}
 		
-		//public function playerPostUpdate():void
-		//{
-			//updateFoot();
-		//}
-		//
-		//private function updateFoot():void
-		//{
-			//foot.x = x + (width - foot.width) / 2;
-			//foot.y = y + height;
-		//}
+		public function updateArm():void
+		{
+			arm.x = x + width / 2;
+			if (facing == LEFT) arm.x -= arm.width;
+			arm.y = y - height +  10;
+			
+			sword.x = x + width / 2;
+			if (facing == RIGHT) {
+				sword.x += 50;
+			} else {
+				sword.x -= 50 + sword.width;
+			}
+			sword.y = y - 30;
+		}
 		
 	}
 
