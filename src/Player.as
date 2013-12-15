@@ -16,10 +16,14 @@ package
 		private var stopAction:Action = new Action("STOP");
 		private var changeDirAction:Action = new Action("CHANGE DIR");
 		private var smallJumpAction:Action = new Action("SMALL JUMP");
+		private var squatAction:Action = new Action("SQUAT");
 		private var bigJumpAction:Action = new Action("BIG JUMP");
 		private var landAction:Action = new Action("LAND");
 		
 		private var dirChanged:Boolean;
+		private var bigJumpSpeed:Number;
+		private const BIG_JUMP_SPEED_D:Number = 800;
+		private const BIG_JUMP_MAX_SPEED:Number = 400;
 		
 		private const DIR_LEFT:int = -1;
 		private const DIR_RIGHT:int = 1;
@@ -32,6 +36,7 @@ package
 		private const BIG_SQUAT:int = 2;
 		
 		private const LAND_ANIM:String = "land";
+		private const BIG_JUMP_ANIM:String = "big_jump";
 		
 		public function Player() 
 		{
@@ -41,9 +46,10 @@ package
 			centerOffsets();
 			offset.y = 5;
 			
-			addAnimation(LAND_ANIM, [1], 10, false);
+			addAnimation(LAND_ANIM, [SMALL_SQUAT], 10, false);
+			addAnimation(BIG_JUMP_ANIM, [SMALL_SQUAT, NO_SQUAT], 10, false);
 			
-			acceleration.y = 400;
+			acceleration.y = 1000;
 			facing = RIGHT;
 			
 			frame = NO_SQUAT;
@@ -61,9 +67,13 @@ package
 			.setInit(smallJump_init)
 			.setNext(jump_next);
 			
+			squatAction
+			.setInit(squat_init)
+			.setUpdate(squat_update)
+			.setNext(squat_next);
+			
 			bigJumpAction
 			.setInit(bigJump_init)
-			.setUpdate(bigJump_update)
 			.setNext(jump_next);
 			
 			landAction
@@ -133,7 +143,8 @@ package
 		
 		private function stopAction_next():Action
 		{
-			if (!isTouching(FLOOR)) return bigJumpAction;
+			if (!isTouching(FLOOR)) return null;
+			if (FlxG.keys.Z) return squatAction;
 			var f:int = facing == RIGHT ? 1 : -1;
 			if (keyDir != 0) {
 				if (keyDir == f) return smallJumpAction;
@@ -172,16 +183,32 @@ package
 			velocity.x = keyDir * 100;
 		}
 		
+		// SQUAT
+		
+		private function squat_init():void
+		{
+			frame = BIG_SQUAT;
+			bigJumpSpeed = 0;
+		}
+		
+		private function squat_update():void
+		{
+			bigJumpSpeed += FlxG.elapsed * BIG_JUMP_SPEED_D;
+		}
+		
+		private function squat_next():Action
+		{
+			if (!FlxG.keys.Z || (bigJumpSpeed >= BIG_JUMP_MAX_SPEED)) return bigJumpAction;
+			return null;
+		}
+		
 		// BIG JUMP
 		
 		private function bigJump_init():void
 		{
-			frame = NO_SQUAT;
-		}
-		
-		private function bigJump_update():void
-		{
-			//
+			play(BIG_JUMP_ANIM);
+			velocity.y = -bigJumpSpeed;
+			velocity.x = keyDir * 200;
 		}
 		
 		// JUMP (SMALL JUMP, BIG_JUMP, CHANGE DIR)
