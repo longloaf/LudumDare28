@@ -292,6 +292,13 @@ package
 			sword.y = y - 30;
 		}
 		
+		override public function kill():void 
+		{
+			super.kill();
+			arm.kill();
+			sword.kill();
+		}
+		
 	}
 
 }

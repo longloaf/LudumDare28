@@ -109,6 +109,7 @@ package
 			enemyGroup.callAll("updateFoot");
 			
 			FlxG.overlap(player.sword, enemyGroup, ovSwordEnemy);
+			FlxG.overlap(player, enemyGroup, ovPlayerEnemy);
 			
 			FlxG.overlap(footGroup, badBlockGroup, ovFootBadBlock);
 			
@@ -223,6 +224,11 @@ package
 		private function ovSwordEnemy(o1:FlxObject, o2:FlxObject):void
 		{
 			(o2 as Creature).kill();
+		}
+		
+		private function ovPlayerEnemy(o1:FlxObject, o2:FlxObject):void
+		{
+			player.kill();
 		}
 		
 	}
