@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4386681"
-     inkscape:cx="562.08826"
-     inkscape:cy="199.12399"
+     inkscape:zoom="2"
+     inkscape:cx="492.64485"
+     inkscape:cy="151.32049"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -117,7 +117,7 @@
        d="m 139.75931,309.29367 152.41774,0 0,136.19821 -152.41774,0 z"
        id="rect2985" />
     <g
-       transform="matrix(0.3,0,0,0.3,375.58841,575.22702)"
+       transform="matrix(0.3,0,0,0.3,360.29649,392.41905)"
        id="g4969"
        inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
        inkscape:export-xdpi="90"
@@ -144,7 +144,7 @@
          id="path4977" />
     </g>
     <g
-       transform="matrix(0.3,0,0,0.3,398.85549,593.51309)"
+       transform="matrix(0.3,0,0,0.3,383.56357,410.70512)"
        id="g4979"
        inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
        inkscape:export-xdpi="90"
@@ -167,7 +167,7 @@
          transform="matrix(0.9145033,0,0,1.4796974,48.757948,-356.4732)" />
     </g>
     <g
-       transform="matrix(0.3,0,0,0.3,399.04326,614.07799)"
+       transform="matrix(0.3,0,0,0.3,383.75134,431.27002)"
        id="g4985"
        inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
        inkscape:export-xdpi="90"
@@ -189,7 +189,7 @@
          sodipodi:type="arc" />
     </g>
     <g
-       transform="matrix(0.3,0,0,0.3,398.35617,622.59346)"
+       transform="matrix(0.3,0,0,0.3,383.06425,439.78549)"
        id="g4991"
        inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
        inkscape:export-xdpi="90"
@@ -211,7 +211,7 @@
          sodipodi:type="arc" />
     </g>
     <g
-       transform="matrix(0.3,0,0,0.3,396.06237,629.34278)"
+       transform="matrix(0.3,0,0,0.3,380.77045,446.53481)"
        id="g4997"
        inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\worm_60x30_4.png"
        inkscape:export-xdpi="90"
@@ -232,6 +232,443 @@
          style="color:#000000;fill:#c83737;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc" />
     </g>
+    <g
+       id="g5257"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\slowEnemy.png"
+         transform="scale(-1,1)"
+         y="842.97821"
+         x="-540.11859"
+         height="119.99999"
+         width="100"
+         id="rect5014"
+         style="color:#000000;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#6f7c91;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5147"
+         width="100"
+         height="120"
+         x="-640.11859"
+         y="842.97821"
+         transform="scale(-1,1)"
+         inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\slowEnemy.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </g>
+    <g
+       id="g5090"
+       transform="matrix(-0.97207314,0,0,0.69113895,1001.092,263.50472)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:transform-center-x="3.5231377"
+         transform="matrix(0.98105436,0.19373265,-0.19373265,0.98105436,0,0)"
+         inkscape:transform-center-y="17.840989"
+         y="814.53442"
+         x="694.48175"
+         height="36.371071"
+         width="7.8007531"
+         id="rect5016"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5018"
+         width="7.8007531"
+         height="36.371071"
+         x="569.66437"
+         y="940.1059"
+         inkscape:transform-center-y="18.156904"
+         transform="matrix(0.99842832,0.05604359,-0.05604359,0.99842832,0,0)"
+         inkscape:transform-center-x="1.0192279" />
+      <rect
+         inkscape:transform-center-x="1.0192279"
+         transform="matrix(0.99842832,0.05604359,-0.05604359,0.99842832,0,0)"
+         inkscape:transform-center-y="18.156904"
+         y="902.77283"
+         x="585.78296"
+         height="36.371071"
+         width="7.8007531"
+         id="rect5020"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5022"
+         width="7.8007531"
+         height="36.371071"
+         x="375.12506"
+         y="1043.4481"
+         inkscape:transform-center-y="17.961332"
+         transform="matrix(0.98767543,-0.15651595,0.15651595,0.98767543,0,0)"
+         inkscape:transform-center-x="-2.8462802" />
+      <rect
+         y="925.55493"
+         x="523.44855"
+         height="16.711033"
+         width="18.677038"
+         id="rect5024"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         y="1003.7036"
+         x="503.78851"
+         height="8.3555164"
+         width="19.168539"
+         id="rect5026"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5030"
+         width="19.168539"
+         height="8.3555164"
+         x="528.36359"
+         y="1003.2121" />
+      <rect
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5032"
+         width="7.9903998"
+         height="69.19664"
+         x="280.8374"
+         y="1019.0952"
+         inkscape:transform-center-y="33.453818"
+         transform="matrix(0.91637599,-0.40031868,0.25507494,0.96692129,0,0)"
+         inkscape:transform-center-x="-8.8251578" />
+      <rect
+         transform="matrix(0.97989585,-0.19950973,0.19950973,0.97989585,0,0)"
+         y="969.77606"
+         x="327.4537"
+         height="33.913567"
+         width="18.185535"
+         id="rect5034"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="matrix(0.99207102,-0.12567852,0.12567852,0.99207102,0,0)"
+         y="911.72491"
+         x="392.3006"
+         height="17.202534"
+         width="21.134542"
+         id="rect5036"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="matrix(0.84295377,-0.537986,0.537986,0.84295377,0,0)"
+         y="1010.2702"
+         x="-43.193169"
+         height="9.83002"
+         width="13.270527"
+         id="rect5040"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         transform="matrix(0.59205377,0,0,0.59205377,205.94637,353.51594)"
+         d="m 518.04205,863.38007 c 0,1.76441 -1.43034,3.19475 -3.19476,3.19475 -1.76442,0 -3.19476,-1.43034 -3.19476,-3.19475 0,-1.76442 1.43034,-3.19476 3.19476,-3.19476 1.76442,0 3.19476,1.43034 3.19476,3.19476 z"
+         sodipodi:ry="3.1947563"
+         sodipodi:rx="3.1947563"
+         sodipodi:cy="863.38007"
+         sodipodi:cx="514.84729"
+         id="path5042"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <rect
+         transform="matrix(0.99458,0.10397419,-0.10397419,0.99458,0,0)"
+         y="905.95636"
+         x="613.14893"
+         height="10.426311"
+         width="10.252539"
+         id="rect5046"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5048"
+         width="10.252539"
+         height="10.426311"
+         x="414.97342"
+         y="1022.0241"
+         transform="matrix(0.99313333,-0.116988,0.116988,0.99313333,0,0)" />
+      <rect
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5106"
+         width="5.9055281"
+         height="28.764271"
+         x="807.75299"
+         y="560.90131"
+         transform="matrix(0.89307626,0.44990531,-0.35004116,0.93673432,0,0)" />
+      <rect
+         transform="matrix(0.39450302,0.91889465,-0.85621732,0.51661582,0,0)"
+         y="-117.15815"
+         x="1058.3497"
+         height="22.850117"
+         width="7.4601398"
+         id="rect5108"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="matrix(0.57527636,0.81795911,-0.68567015,0.72791239,0,0)"
+         y="86.029663"
+         x="1007.4529"
+         height="24.915148"
+         width="6.9185057"
+         id="rect5110"
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5112"
+         width="8.0638123"
+         height="21.593924"
+         x="760.39038"
+         y="-542.93121"
+         transform="matrix(-0.01863409,0.99982637,-0.96501671,-0.26218837,0,0)" />
+    </g>
+    <rect
+       style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5114"
+       width="4.5268135"
+       height="9.8579464"
+       x="-1014.4164"
+       y="191.6367"
+       transform="matrix(-0.6532264,-0.75716264,-0.72834353,0.68521215,0,0)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       transform="matrix(-0.9688787,-0.24753597,-0.23864627,0.97110656,0,0)"
+       y="719.50262"
+       x="-724.52838"
+       height="10.104961"
+       width="4.5409164"
+       id="rect5116"
+       style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       transform="matrix(0.80377254,-0.59493672,-0.68065275,-0.73260619,0,0)"
+       y="-1043.8203"
+       x="-234.25371"
+       height="7.9601893"
+       width="3.7106857"
+       id="rect5118"
+       style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5120"
+       width="3.7384255"
+       height="7.9024882"
+       x="-494.53012"
+       y="-962.61005"
+       transform="matrix(0.60176145,-0.79867588,-0.86143597,-0.50786619,0,0)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       style="fill:#d40000"
+       transform="matrix(-0.97207314,0,0,0.69113901,1101.092,263.50466)"
+       id="g5151"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5153"
+         width="7.8007531"
+         height="36.371071"
+         x="694.48175"
+         y="814.53442"
+         inkscape:transform-center-y="17.840989"
+         transform="matrix(0.98105436,0.19373265,-0.19373265,0.98105436,0,0)"
+         inkscape:transform-center-x="3.5231377" />
+      <rect
+         inkscape:transform-center-x="1.0192279"
+         transform="matrix(0.99842832,0.05604359,-0.05604359,0.99842832,0,0)"
+         inkscape:transform-center-y="18.156904"
+         y="940.1059"
+         x="569.66437"
+         height="36.371071"
+         width="7.8007531"
+         id="rect5155"
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5157"
+         width="7.8007531"
+         height="36.371071"
+         x="585.78296"
+         y="902.77283"
+         inkscape:transform-center-y="18.156904"
+         transform="matrix(0.99842832,0.05604359,-0.05604359,0.99842832,0,0)"
+         inkscape:transform-center-x="1.0192279" />
+      <rect
+         inkscape:transform-center-x="-2.8462802"
+         transform="matrix(0.98767543,-0.15651595,0.15651595,0.98767543,0,0)"
+         inkscape:transform-center-y="17.961332"
+         y="1043.4481"
+         x="375.12506"
+         height="36.371071"
+         width="7.8007531"
+         id="rect5159"
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5161"
+         width="18.677038"
+         height="16.711033"
+         x="523.44855"
+         y="925.55493" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5163"
+         width="19.168539"
+         height="8.3555164"
+         x="503.78851"
+         y="1003.7036" />
+      <rect
+         y="1003.2121"
+         x="528.36359"
+         height="8.3555164"
+         width="19.168539"
+         id="rect5165"
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:transform-center-x="-8.8251578"
+         transform="matrix(0.91637599,-0.40031868,0.25507494,0.96692129,0,0)"
+         inkscape:transform-center-y="33.453818"
+         y="1019.0952"
+         x="280.8374"
+         height="69.19664"
+         width="7.9903998"
+         id="rect5167"
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5169"
+         width="18.185535"
+         height="33.913567"
+         x="327.4537"
+         y="969.77606"
+         transform="matrix(0.97989585,-0.19950973,0.19950973,0.97989585,0,0)" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5171"
+         width="21.134542"
+         height="17.202534"
+         x="392.3006"
+         y="911.72491"
+         transform="matrix(0.99207102,-0.12567852,0.12567852,0.99207102,0,0)" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5173"
+         width="13.270527"
+         height="9.83002"
+         x="-43.193169"
+         y="1010.2702"
+         transform="matrix(0.84295377,-0.537986,0.537986,0.84295377,0,0)" />
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path5175"
+         sodipodi:cx="514.84729"
+         sodipodi:cy="863.38007"
+         sodipodi:rx="3.1947563"
+         sodipodi:ry="3.1947563"
+         d="m 518.04205,863.38007 c 0,1.76441 -1.43034,3.19475 -3.19476,3.19475 -1.76442,0 -3.19476,-1.43034 -3.19476,-3.19475 0,-1.76442 1.43034,-3.19476 3.19476,-3.19476 1.76442,0 3.19476,1.43034 3.19476,3.19476 z"
+         transform="matrix(0.59205377,0,0,0.59205377,205.94637,353.51594)" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5177"
+         width="10.252539"
+         height="10.426311"
+         x="613.14893"
+         y="905.95636"
+         transform="matrix(0.99458,0.10397419,-0.10397419,0.99458,0,0)" />
+      <rect
+         transform="matrix(0.99313333,-0.116988,0.116988,0.99313333,0,0)"
+         y="1022.0241"
+         x="414.97342"
+         height="10.426311"
+         width="10.252539"
+         id="rect5179"
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="matrix(0.89307626,0.44990531,-0.35004116,0.93673432,0,0)"
+         y="560.90131"
+         x="807.75299"
+         height="28.764271"
+         width="5.9055281"
+         id="rect5181"
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5183"
+         width="7.4601398"
+         height="22.850117"
+         x="1058.3497"
+         y="-117.15815"
+         transform="matrix(0.39450302,0.91889465,-0.85621732,0.51661582,0,0)" />
+      <rect
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5185"
+         width="6.9185057"
+         height="24.915148"
+         x="1007.4529"
+         y="86.029663"
+         transform="matrix(0.57527636,0.81795911,-0.68567015,0.72791239,0,0)" />
+      <rect
+         transform="matrix(-0.01863409,0.99982637,-0.96501671,-0.26218837,0,0)"
+         y="-542.93121"
+         x="760.39038"
+         height="21.593924"
+         width="8.0638123"
+         id="rect5187"
+         style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <rect
+       transform="matrix(-0.65322637,-0.75716267,-0.7283435,0.68521219,0,0)"
+       y="115.85016"
+       x="-1083.0012"
+       height="9.8579464"
+       width="4.5268135"
+       id="rect5189"
+       style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5191"
+       width="4.5409164"
+       height="10.104961"
+       x="-821.64301"
+       y="694.74799"
+       transform="matrix(-0.9688787,-0.24753599,-0.23864626,0.97110657,0,0)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5193"
+       width="3.7106857"
+       height="7.9601898"
+       x="-160.53555"
+       y="-1103.6855"
+       transform="matrix(0.80377251,-0.59493676,-0.68065272,-0.73260622,0,0)"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       transform="matrix(0.60176141,-0.79867591,-0.86143595,-0.50786622,0,0)"
+       y="-1042.9902"
+       x="-443.41748"
+       height="7.9024882"
+       width="3.7384255"
+       id="rect5195"
+       style="color:#000000;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\sceleton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:groupmode="layer"
