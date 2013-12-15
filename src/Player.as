@@ -8,7 +8,7 @@ package
 	 */
 	public class Player extends FlxSprite
 	{
-		[Embed(source = "data/player_100x160_3.png")]
+		[Embed(source = "data/player_100x120_3.png")]
 		private static const Img:Class;
 		
 		public var actionManager:ActionManager = new ActionManager();
@@ -51,9 +51,9 @@ package
 		
 		public function Player() 
 		{
-			loadGraphic(Img, true, true, 100, 160);
+			loadGraphic(Img, true, true, 100, 120);
 			width /= 4;
-			height = 150;
+			height = 110;
 			centerOffsets();
 			offset.y = 5;
 			

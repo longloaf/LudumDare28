@@ -24,18 +24,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="148.76389"
-     inkscape:cy="782.63966"
+     inkscape:zoom="2.365625"
+     inkscape:cx="177.30781"
+     inkscape:cy="580.49252"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:object-nodes="false"
+     inkscape:object-nodes="true"
      inkscape:window-width="1280"
      inkscape:window-height="977"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-smooth-nodes="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -181,5 +184,186 @@
        d="m 97.857143,287.36218 0.178571,4.64286"
        id="path3036"
        inkscape:connector-curvature="0" />
+    <path
+       id="path3065"
+       d="m 118.92857,355.54075 32,0 0,32 -32,0 z"
+       style="color:#000000;fill:#6f7c91;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3837"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\platform.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#b7bec8;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 118.92857,355.54075 32,0 0,8 -32,0 z"
+         id="path3006-1" />
+      <path
+         id="path3067"
+         d="m 118.92857,363.54075 32,0 0,4 -32,0 z"
+         style="color:#000000;fill:#535d6c;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4643"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\switch_64x80_2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="499.50507"
+         x="96.428574"
+         height="80"
+         width="64"
+         id="rect4439"
+         style="color:#000000;fill:#6f7c91;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         transform="scale(-1,1)"
+         style="color:#000000;fill:#6f7c91;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4629"
+         width="64"
+         height="80"
+         x="-224.42857"
+         y="499.50507" />
+    </g>
+    <g
+       id="g4567"
+       transform="matrix(0.7290027,-0.16145024,0.16145024,0.7290027,-118.44792,176.26856)"
+       inkscape:transform-center-y="-40.484796"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\switch_64x80_2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:transform-center-x="15.744502">
+      <g
+         id="g4593">
+        <g
+           id="g4597"
+           inkscape:transform-center-x="16.285851"
+           inkscape:transform-center-y="-40.758486"
+           transform="matrix(0.98970045,-0.14315382,0.14315382,0.98970045,-83.684703,35.635728)">
+          <rect
+             y="521.02643"
+             x="203.54572"
+             height="62.625"
+             width="6"
+             id="rect4563"
+             style="color:#000000;fill:#c8beb7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          <rect
+             y="499.30368"
+             x="200.98988"
+             height="25.253813"
+             width="11.111678"
+             id="rect4565"
+             style="color:#000000;fill:#483e37;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        </g>
+      </g>
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#483e37;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4441"
+       sodipodi:cx="241.93153"
+       sodipodi:cy="557.89252"
+       sodipodi:rx="28.789347"
+       sodipodi:ry="28.789347"
+       d="m 213.14219,557.89252 a 28.789347,28.789347 0 0 1 57.57869,0 l -28.78935,0 z"
+       transform="matrix(0.648388,0,0,0.648388,-28.43693,217.77425)"
+       sodipodi:start="3.1415927"
+       sodipodi:end="6.2831853"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\switch_64x80_2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\player_100x120_3.png"
+       id="g3911"
+       transform="matrix(0.65905541,0,0,0.49429154,212.71016,198.59457)">
+      <rect
+         inkscape:transform-center-x="-4.6892438"
+         transform="matrix(0.97608929,-0.21736997,0.21736997,0.97608929,0,0)"
+         inkscape:transform-center-y="21.056826"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3913"
+         width="29.888754"
+         height="63.948032"
+         x="42.028641"
+         y="670.66278" />
+      <path
+         transform="translate(9.7553043,9.707141)"
+         d="m 236.32969,542.51562 c 0,12.4763 -10.11404,22.59034 -22.59034,22.59034 -12.4763,0 -22.59034,-10.11404 -22.59034,-22.59034 0,-12.47629 10.11404,-22.59033 22.59034,-22.59033 12.4763,0 22.59034,10.11404 22.59034,22.59033 z"
+         sodipodi:ry="22.590338"
+         sodipodi:rx="22.590338"
+         sodipodi:cy="542.51562"
+         sodipodi:cx="213.73935"
+         id="path3915"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <rect
+         transform="matrix(0.98348171,0.18100754,-0.18100754,0.98348171,0,0)"
+         y="520.89825"
+         x="286.24066"
+         height="83.410477"
+         width="41.705238"
+         id="rect3917"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:transform-center-x="-5.3204019"
+         transform="matrix(0.9691105,0.24662693,-0.24662693,0.9691105,0,0)"
+         inkscape:transform-center-y="-20.906287"
+         y="611.28467"
+         x="359.65863"
+         height="63.948032"
+         width="29.888754"
+         id="rect3919"
+         style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.75205386;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       inkscape:transform-center-x="-15.744501"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\switch_64x80_2.png"
+       inkscape:transform-center-y="-40.484796"
+       transform="matrix(-0.7290027,-0.16145024,-0.16145024,0.7290027,439.30507,176.26855)"
+       id="g4631">
+      <g
+         id="g4633">
+        <g
+           transform="matrix(0.98970045,-0.14315382,0.14315382,0.98970045,-83.684703,35.635728)"
+           inkscape:transform-center-y="-40.758486"
+           inkscape:transform-center-x="16.285851"
+           id="g4635">
+          <rect
+             style="color:#000000;fill:#c8beb7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="rect4637"
+             width="6"
+             height="62.625"
+             x="203.54572"
+             y="521.02643" />
+          <rect
+             style="color:#000000;fill:#483e37;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="rect4639"
+             width="11.111678"
+             height="25.253813"
+             x="200.98988"
+             y="499.30368" />
+        </g>
+      </g>
+    </g>
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\Солдатов\d\flash\games\LudumDare28\src\data\switch_64x80_2.png"
+       sodipodi:end="6.2831853"
+       sodipodi:start="3.1415927"
+       transform="matrix(-0.648388,0,0,0.648388,349.29408,217.77424)"
+       d="m 213.14219,557.89252 a 28.789347,28.789347 0 0 1 57.57869,0 l -28.78935,0 z"
+       sodipodi:ry="28.789347"
+       sodipodi:rx="28.789347"
+       sodipodi:cy="557.89252"
+       sodipodi:cx="241.93153"
+       id="path4641"
+       style="color:#000000;fill:#483e37;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc" />
   </g>
 </svg>
