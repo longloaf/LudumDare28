@@ -6,15 +6,12 @@ package
 	 */
 	public class Level1 extends Level
 	{
-		
-		public function Level1() 
-		{
-			
-		}
+		[Embed(source = "data/level1.txt", mimeType = "application/octet-stream")]
+		private static const Map:Class;
 		
 		override public function getMap():Class 
 		{
-			return null;
+			return Map;
 		}
 		
 		override public function makeLevel():void 

@@ -11,10 +11,7 @@ package
 	 * @author Maksim Soldatov
 	 */
 	public class Level extends FlxState
-	{
-		[Embed(source = "data/map1.txt", mimeType = "application/octet-stream")]
-		private static const Map:Class;
-		
+	{	
 		[Embed(source = "data/tiles_32x32_20.png")]
 		private static const Tiles:Class;
 		
@@ -30,7 +27,7 @@ package
 		override public function create():void 
 		{
 			tileMap = new FlxTilemap();
-			tileMap.loadMap(new Map, Tiles, 32, 32, FlxTilemap.OFF, 0, 0, 10);
+			tileMap.loadMap(new (getMap()), Tiles, 32, 32, FlxTilemap.OFF, 0, 0, 10);
 			tileMap.reset(0, 0);
 			
 			start = new Start();
@@ -41,8 +38,6 @@ package
 			doorGroup = new FlxGroup();
 			
 			player = new Player();
-			player.reset(100, 100);
-			//player.reset(38 * G.TILE_SIZE, 0);
 			
 			switchGroup = new FlxGroup();
 			
@@ -59,14 +54,9 @@ package
 			add(switchGroup);
 			add(player.foot);
 			
-			makePlatform(39, 8, 3, 8, 2);
-			makeSwitchAndDoor(44, 7, true, 49, 2);
-			makeSwitchAndDoor(46, 7, false, 49, 10);
-			makeBadBlock(55, 8, 9, 1);
-			makeBadBlock(51, 10, 3, 2);
-			makeBadBlock(64, 14, 5);
-			makeStart(3, 13);
-			makeFinish(15, 13);
+			makeLevel();
+			
+			player.reset(start.x + (start.width - player.width) / 2, start.y + start.height - player.height);
 		}
 		
 		public function getMap():Class
@@ -101,7 +91,6 @@ package
 			for (var x:int = 0; x < width; ++x) {
 				for (var y:int = 0; y < height; y += step) {
 					var p:Platform = new Platform();
-					//p.reset(tileMap.x + (tx + x) * G.TILE_SIZE, tileMap.y + (ty + y) * G.TILE_SIZE);
 					moveSprite(p, tx + x, ty + y);
 					platformGroup.add(p);
 				}
@@ -115,9 +104,6 @@ package
 			d.x += (G.TILE_SIZE - d.width) / 2;
 			doorGroup.add(d);
 			var s:Switch = new Switch(d, left);
-			//moveSprite(s, sx, sy);
-			//s.x += (2 * G.TILE_SIZE - s.width) / 2;
-			//s.y -= s.height - G.TILE_SIZE;
 			moveSprite2(s, sx, sy);
 			switchGroup.add(s);
 		}
