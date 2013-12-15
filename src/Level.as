@@ -24,6 +24,7 @@ package
 		private var doorGroup:FlxGroup;
 		private var player:Player;
 		private var enemyGroup:FlxGroup;
+		private var bloodGroup:BloodGroup;
 		private var knifeGroup:KnifeGroup;
 		private var switchGroup:FlxGroup;
 		
@@ -48,10 +49,12 @@ package
 			player = new Player();
 			player.createCreature();
 			enemyGroup = new FlxGroup();
+			bloodGroup = new BloodGroup();
 			knifeGroup = new KnifeGroup();
 			
 			switchGroup = new FlxGroup();
 			footGroup = new FlxGroup();
+			footGroup.visible = false;
 			
 			txt = new FlxText(0, 200, FlxG.width, "R - RESTART, Q - QUIT");
 			txt.size = 32;
@@ -81,6 +84,7 @@ package
 			add(player.sword);
 			add(player.arm);
 			add(enemyGroup);
+			add(bloodGroup);
 			add(knifeGroup);
 			add(switchGroup);
 			add(footGroup);
@@ -104,7 +108,7 @@ package
 		override public function update():void 
 		{
 			if (FlxG.mouse.justPressed()) {
-				knifeGroup.makeKnife(FlxG.mouse.x, FlxG.mouse.y, -10);
+				bloodGroup.makeBLood(FlxG.mouse.x, FlxG.mouse.y);
 			}
 			
 			super.update();
@@ -132,6 +136,8 @@ package
 				FlxG.resetState();
 			} else if (FlxG.keys.justPressed("Q")) {
 				FlxG.switchState(new MenuState());
+			} else if (FlxG.keys.justPressed("N")) {
+				G.nextLevel();
 			}
 		}
 		
@@ -240,12 +246,16 @@ package
 		
 		private function ovSwordEnemy(o1:FlxObject, o2:FlxObject):void
 		{
+			if (!(o2 is Worm) && !(o2 is Knife)) {
+				bloodGroup.makeBLood(o2.x + o2.width / 2, o2.y + o2.height / 2);
+			}
 			o2.kill();
 		}
 		
 		private function ovPlayerEnemy(o1:FlxObject, o2:FlxObject):void
 		{
 			player.kill();
+			bloodGroup.makeBLood(player.x + player.width / 2, player.y + player.height / 2);
 		}
 		
 	}

@@ -20,11 +20,11 @@ package
 		public static const T_DRAW:int = 0;
 		public static const T_COLLIDE:int = 10;
 		
-		//public static const LEVELS:Vector.<Class> = 
-		//Vector.<Class>([Level1, Level2, Level3, Level4]);
-		
 		public static const LEVELS:Vector.<Class> = 
-		Vector.<Class>([Level4]);
+		Vector.<Class>([Level1, Level2, Level3, Level4]);
+		
+		//public static const LEVELS:Vector.<Class> = 
+		//Vector.<Class>([Level4]);
 		
 		public static var currentLevel:int = 0;
 		
