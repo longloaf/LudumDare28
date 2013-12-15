@@ -23,9 +23,9 @@ package
 		private var dirChanged:Boolean;
 		private var verticalJump:Boolean;
 		private const BIG_JUMP_VEL_Y:Number = 300;
-		private const BIG_JUMP_VEL_X:Number = 200;
+		private const BIG_JUMP_VEL_X:Number = 203;
 		private const VERTICAL_JUMP_VEL_Y:Number = 400;
-		private const SMALL_JUMP_VEL_X:Number = 100;
+		private const SMALL_JUMP_VEL_X:Number = 80; // 100;
 		private const SMALL_JUMP_VEL_Y:Number = 100;
 		
 		private const DIR_LEFT:int = -1;
