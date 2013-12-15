@@ -82,6 +82,8 @@ package
 			
 			FlxG.overlap(player, switchGroup, ovPlayerSwitch);
 			
+			FlxG.overlap(player, finish, ovPlayerFinish);
+			
 			if (FlxG.keys.justPressed("ENTER")) FlxG.resetState();
 		}
 		
@@ -150,6 +152,12 @@ package
 		private function ovFootBadBlock(o1:FlxObject, o2:FlxObject):void
 		{
 			(o2 as BadBlock).breakBlock();
+		}
+		
+		private function ovPlayerFinish(o1:FlxObject, o2:FlxObject):void
+		{
+			finish.solid = false;
+			G.nextLevel();
 		}
 		
 	}
