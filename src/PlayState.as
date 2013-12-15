@@ -1,6 +1,8 @@
 package  
 {
 	import org.flixel.FlxG;
+	import org.flixel.FlxGroup;
+	import org.flixel.FlxObject;
 	import org.flixel.FlxSprite;
 	import org.flixel.FlxState;
 	import org.flixel.FlxText;
@@ -11,7 +13,9 @@ package
 	public class PlayState extends FlxState
 	{
 		private var floor:Floor;
+		private var platform:FlxSprite;
 		private var player:Player;
+		private var solidObjects:FlxGroup;
 		
 		private var actionText:FlxText;
 		private var prevAction:Action = null;
@@ -23,6 +27,13 @@ package
 			bg.makeGraphic(FlxG.width, FlxG.height);
 			
 			floor = new Floor();
+			
+			platform = new FlxSprite();
+			platform.makeGraphic(300, 20, 0xFF808080);
+			platform.immovable = true;
+			platform.allowCollisions = FlxObject.UP;
+			platform.reset(400, 300);
+			
 			player = new Player();
 			
 			actionText = new FlxText(10, 10, FlxG.width, "");
@@ -30,16 +41,21 @@ package
 			actionText.color = FlxG.BLUE;
 			actionText.shadow = FlxG.BLACK;
 			
+			solidObjects = new FlxGroup();
+			solidObjects.add(floor);
+			solidObjects.add(platform);
+			
 			add(bg);
-			add(floor);
+			add(solidObjects);
 			add(player);
 			add(actionText);
 		}
 		
 		override public function update():void 
-		{
+		{	
 			super.update();
-			FlxG.collide(floor, player);
+			
+			FlxG.collide(player, solidObjects);
 			
 			prevAction = nextAction;
 			nextAction = player.actionManager.action;
