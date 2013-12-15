@@ -17,14 +17,7 @@ package
 		private var changeDirAction:Action = new Action("CHANGE DIR");
 		private var smallJumpAction:Action = new Action("SMALL JUMP");
 		private var bigJumpAction:Action = new Action("BIG JUMP");
-		
-		//private const SMALL_JUMP_STATE:int = 0;
-		//private const SMALL_SUMP_FINISH_STATE:int = 1;
-		//private const BIG_JUMP_PREPARE_STATE:int = 2;
-		//private const BIG_JUMP_STATE:int = 3;
-		//private const BIG_JUMP_FINISH_STATE:int = 4;
-		//private const CHANGE_DIR_STATE:int = 5;
-		//private var jumpState:int = BIG_JUMP_STATE;
+		private var landAction:Action = new Action("LAND");
 		
 		private var dirChanged:Boolean;
 		
@@ -38,6 +31,8 @@ package
 		private const SMALL_SQUAT:int = 1;
 		private const BIG_SQUAT:int = 2;
 		
+		private const LAND_ANIM:String = "land";
+		
 		public function Player() 
 		{
 			loadGraphic(Img, true, true, 100, 160);
@@ -45,6 +40,8 @@ package
 			height = 150;
 			centerOffsets();
 			offset.y = 5;
+			
+			addAnimation(LAND_ANIM, [1], 10, false);
 			
 			acceleration.y = 400;
 			facing = RIGHT;
@@ -58,16 +55,20 @@ package
 			changeDirAction
 			.setInit(changeDir_init)
 			.setUpdate(changeDir_update)
-			.setNext(smallJump_next);
+			.setNext(jump_next);
 			
 			smallJumpAction
 			.setInit(smallJump_init)
-			.setNext(smallJump_next);
+			.setNext(jump_next);
 			
 			bigJumpAction
 			.setInit(bigJump_init)
 			.setUpdate(bigJump_update)
-			.setNext(bigJump_next);
+			.setNext(jump_next);
+			
+			landAction
+			.setInit(land_init)
+			.setNext(land_next);
 			
 			actionManager.init(stopAction);
 			
@@ -128,12 +129,11 @@ package
 		private function stopAction_init():void
 		{
 			frame = SMALL_SQUAT;
-			velocity.x = 0;
 		}
 		
 		private function stopAction_next():Action
 		{
-			//if (!isTouching(FLOOR)) return bigJumpAction;
+			if (!isTouching(FLOOR)) return bigJumpAction;
 			var f:int = facing == RIGHT ? 1 : -1;
 			if (keyDir != 0) {
 				if (keyDir == f) return smallJumpAction;
@@ -172,12 +172,6 @@ package
 			velocity.x = keyDir * 100;
 		}
 		
-		private function smallJump_next():Action
-		{
-			if (isTouching(FLOOR)) return stopAction;
-			return null;
-		}
-		
 		// BIG JUMP
 		
 		private function bigJump_init():void
@@ -190,11 +184,25 @@ package
 			//
 		}
 		
-		private function bigJump_next():Action
+		// JUMP (SMALL JUMP, BIG_JUMP, CHANGE DIR)
+		
+		private function jump_next():Action
 		{
-			if (isTouching(FLOOR)) {
-				return stopAction;
-			}
+			if (isTouching(FLOOR)) return landAction;
+			return null;
+		}
+		
+		// LAND
+		
+		private function land_init():void
+		{
+			velocity.x = 0;
+			play(LAND_ANIM);
+		}
+		
+		private function land_next():Action
+		{
+			if (finished) return stopAction;
 			return null;
 		}
 		

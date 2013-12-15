@@ -8,27 +8,22 @@ package
 	{
 		
 		public var action:Action = null;
-		private var actionInited:Boolean = false;
 		
 		public function init(a:Action):void
 		{
 			if (a == null) throw new Error();
 			action = a;
-			actionInited = false;
+			action.init();
 		}
 		
 		public function update():void
 		{
-			if (!actionInited) {
-				action.init();
-				actionInited = true;
-			}
-			action.update();
 			var next:Action = action.next();
 			if (next != null) {
 				action = next;
-				actionInited = false;
+				action.init();
 			}
+			action.update();
 		}
 		
 	}
