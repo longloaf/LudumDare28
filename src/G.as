@@ -11,6 +11,8 @@ package
 		
 		public static const NIL_FUNC:Function = function():void { }
 		
+		public static const TILE_SIZE:int = 32;
+		
 	}
 
 }
