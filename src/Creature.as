@@ -11,7 +11,7 @@ package
 		
 		public var foot:FlxSprite = new FlxSprite;
 		
-		public function createCreature():void
+		public final function createCreature():void
 		{
 			create();
 			foot.makeGraphic(width, 5, FlxG.RED);

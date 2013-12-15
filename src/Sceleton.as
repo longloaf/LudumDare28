@@ -21,6 +21,11 @@ package
 		{
 			player = p;
 			fast = f;
+			if (fast) {
+				maxVelocity.x = V_FAST;
+			} else {
+				maxVelocity.x = V_SLOW;
+			}
 		}
 		
 		override protected function create():void 
@@ -33,10 +38,8 @@ package
 			offset.y = 20;
 			if (fast) {
 				frame = 1;
-				vel = V_FAST;
 			} else {
 				frame = 0;
-				vel = V_SLOW;
 			}
 			
 		}
@@ -47,7 +50,7 @@ package
 				var d:Number = (x + width / 2) - (player.x + player.width / 2);
 				facing = d > 0 ? LEFT : RIGHT;
 				if (Math.abs(d) < 500) {
-					velocity.x = (d > 0 ? -1 : 1) * vel;
+					acceleration.x = (d > 0 ? -1 : 1) * 1000;
 				} else {
 					velocity.x = 0;
 				}

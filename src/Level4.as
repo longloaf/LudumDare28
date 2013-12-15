@@ -16,8 +16,9 @@ package
 		
 		override public function makeLevel():void 
 		{
-			makeStart(2, 15);
-			makeFinish(26, 15);
+			makeStart(2, 12);
+			makeFinish(26, 12);
+			makeBoss(22, 12);
 		}
 		
 	}

@@ -24,6 +24,7 @@ package
 		private var doorGroup:FlxGroup;
 		private var player:Player;
 		private var enemyGroup:FlxGroup;
+		private var knifeGroup:KnifeGroup;
 		private var switchGroup:FlxGroup;
 		
 		private var solidGroup:FlxGroup;
@@ -47,6 +48,7 @@ package
 			player = new Player();
 			player.createCreature();
 			enemyGroup = new FlxGroup();
+			knifeGroup = new KnifeGroup();
 			
 			switchGroup = new FlxGroup();
 			footGroup = new FlxGroup();
@@ -79,6 +81,7 @@ package
 			add(player.sword);
 			add(player.arm);
 			add(enemyGroup);
+			add(knifeGroup);
 			add(switchGroup);
 			add(footGroup);
 			add(txt);
@@ -100,6 +103,10 @@ package
 		
 		override public function update():void 
 		{
+			if (FlxG.mouse.justPressed()) {
+				knifeGroup.makeKnife(FlxG.mouse.x, FlxG.mouse.y, -10);
+			}
+			
 			super.update();
 			FlxG.collide(player, solidGroup);
 			FlxG.collide(enemyGroup, solidGroup);
@@ -109,7 +116,9 @@ package
 			enemyGroup.callAll("updateFoot");
 			
 			FlxG.overlap(player.sword, enemyGroup, ovSwordEnemy);
+			FlxG.overlap(player.sword, knifeGroup, ovSwordEnemy);
 			FlxG.overlap(player, enemyGroup, ovPlayerEnemy);
+			FlxG.overlap(player, knifeGroup, ovPlayerEnemy);
 			
 			FlxG.overlap(footGroup, badBlockGroup, ovFootBadBlock);
 			
@@ -187,6 +196,14 @@ package
 			addEnemy(s);
 		}
 		
+		public function makeBoss(tx:int, ty:int):void
+		{
+			var b:Boss = new Boss(player, knifeGroup);
+			b.createCreature();
+			moveSprite2(b, tx, ty);
+			addEnemy(b);
+		}
+		
 		private function addEnemy(c:Creature):void
 		{
 			enemyGroup.add(c);
@@ -223,7 +240,7 @@ package
 		
 		private function ovSwordEnemy(o1:FlxObject, o2:FlxObject):void
 		{
-			(o2 as Creature).kill();
+			o2.kill();
 		}
 		
 		private function ovPlayerEnemy(o1:FlxObject, o2:FlxObject):void
