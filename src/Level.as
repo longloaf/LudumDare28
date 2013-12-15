@@ -107,10 +107,6 @@ package
 		
 		override public function update():void 
 		{
-			if (FlxG.mouse.justPressed()) {
-				bloodGroup.makeBLood(FlxG.mouse.x, FlxG.mouse.y);
-			}
-			
 			super.update();
 			FlxG.collide(player, solidGroup);
 			FlxG.collide(enemyGroup, solidGroup);
