@@ -1,5 +1,5 @@
-LudumDare28
-===========
+LudumDare28 Compo
+=================
 
 One-leged man
 
